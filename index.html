@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Saiful Islam | Software Engineer & AI Researcher</title>
+    <meta name="description" content="Portfolio of Md Saiful Islam - Software Engineer specializing in Backend Development and AI Research">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236366f1'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' font-family='Space Grotesk, sans-serif' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- 3D Morphing Background Shapes -->
+    <div class="bg-shape-1"></div>
+    <div class="bg-shape-2"></div>
+    <div class="bg-shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">Saiful</span>
+                    <span class="logo-dot">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-en="Home" data-de="Startseite">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-de="Über mich">About</a></li>
+                <li><a href="#experience" class="nav-link" data-en="Experience" data-de="Erfahrung">Experience</a></li>
+                <li><a href="#research" class="nav-link" data-en="Research" data-de="Forschung">Research</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-de="Projekte">Projects</a></li>
+                <li><a href="#achievements" class="nav-link" data-en="Achievements" data-de="Erfolge">Achievements</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-de="Kontakt">Contact</a></li>
+            </ul>
+            <div class="language-toggle" id="languageToggle">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <button class="theme-btn active" data-theme="dark" title="Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="theme-btn" data-theme="light" title="Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-bg"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Md Saiful Islam</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="typed-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Software Engineer specializing in Backend Development with Go and AI Research.
+                    Currently pursuing MSc in Data Science at TU Dortmund University.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="assets/docs/Md_Saiful_Islam_Resume.pdf" class="btn btn-secondary" download>
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/SaifulJnU" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://gitlab.com/SaifulJnU" target="_blank" aria-label="GitLab">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" aria-label="Stack Overflow">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                    <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" aria-label="Sololearn">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <div class="image-bg"></div>
+                    <div class="code-snippet">
+                        <pre><code>package main
+
+func main() {
+    fmt.Println("Hello, World!")
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate Software Engineer with expertise in backend development and a strong foundation in AI research.
+                        Currently working at Shikho Technologies, I specialize in building scalable microservices using Go, gRPC, and modern cloud technologies.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Companies Worked</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-container">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="edu-icon edu-icon-img">
+                                <img src="https://play-lh.googleusercontent.com/gLJzGBXJZ4JElsCWz0N3eQQrUru7JCMHBy5RCHQbmz3mw_vK08jpoogfBMX-VBSgYQ" alt="TU Dortmund University">
+                            </div>
+                            <div class="edu-content">
+                                <h4>MSc in Data Science</h4>
+                                <p class="edu-institution">TU Dortmund University</p>
+                                <p class="edu-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dortmund, Germany
+                                </p>
+                                <p class="edu-date">Starting April 2026</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-icon edu-icon-img">
+                                <img src="https://brandlogovector.com/wp-content/uploads/2021/09/Jagannath-University-Logo.png" alt="Jagannath University">
+                            </div>
+                            <div class="edu-content">
+                                <h4>BSc in Computer Science and Engineering</h4>
+                                <p class="edu-institution">Jagannath University</p>
+                                <p class="edu-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                </p>
+                                <p class="edu-date">Jan 2018 - Jan 2023</p>
+                                <p class="edu-gpa">
+                                    <i class="fas fa-award"></i>
+                                    CGPA: 3.40/4.0 | Last Sem GPA: 3.96/4.0
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Software Engineering Experience</h2>
+                <p class="section-subtitle">My professional journey in software development</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3>Software Engineer (Backend)</h3>
+                                <p class="company">
+                                    <i class="fas fa-building"></i>
+                                    Shikho Technologies Bangladesh Limited
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <p class="timeline-date">
+                                    <i class="fas fa-calendar"></i>
+                                    July 2023 - Present
+                                </p>
+                                <p class="timeline-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Hybrid
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Researched and implemented KPI service for data sync between PostgresDB and MongoDB using MongoStream
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed APIs for generic booking system using gRPC and graphql-go
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Implemented portal features: batch filtering, sorting order, 100ms live-class integration, and 2-Factor OTP integration
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Maintained technical documentation using Postman and ClickUp
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">ArangoDB</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3>Blockchain Developer (Intern)</h3>
+                                <p class="company">
+                                    <i class="fas fa-building"></i>
+                                    AHOM Limited
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <p class="timeline-date">
+                                    <i class="fas fa-calendar"></i>
+                                    May 2023 - July 2023
+                                </p>
+                                <p class="timeline-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Remote
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed and modified modules for the Cosmos SDK
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Worked on Layer 1 Blockchain architecture and implementation
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Golang</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Protobuf</span>
+                            <span class="tech-tag">Cosmos SDK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3>Student Partner (Intern)</h3>
+                                <p class="company">
+                                    <i class="fas fa-building"></i>
+                                    SmartBridge
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <p class="timeline-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Mar 2021 - June 2021
+                                </p>
+                                <p class="timeline-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    India, Remote
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built a project named Smart Attendance System using OpenCV and Flask
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Research & Publications</h2>
+                <p class="section-subtitle">My contributions to AI and blockchain research</p>
+            </div>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">
+                            IoT Framework for Chronic Kidney Disease Detection Using Deep Learning
+                        </h3>
+                        <p class="publication-authors">
+                            M. M. Ali, <strong>M. S. Islam</strong>, M. N. Uddin, and M. A. Uddin
+                        </p>
+                        <p class="publication-venue">
+                            <i class="fas fa-book"></i>
+                            Intelligence-Based Medicine, Volume 10, 2024
+                        </p>
+                        <p class="publication-description">
+                            A conceptual IoT framework based on ANOVA-F feature selection for chronic kidney disease detection using deep learning approach.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Feature Selection</span>
+                        </div>
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.1016/j.ibmed.2024.100170" target="_blank" class="publication-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">
+                            A Blockchain-Based Digital Classified Forensic Image Preservation Framework
+                        </h3>
+                        <p class="publication-authors">
+                            <strong>M. S. Islam</strong>, M. M. Ali, M. N. Uddin, et al.
+                        </p>
+                        <p class="publication-venue">
+                            <i class="fas fa-book"></i>
+                            Authorea, 2024
+                        </p>
+                        <p class="publication-description">
+                            A novel framework for preserving digital forensic images using blockchain technology to ensure data integrity and classification.
+                        </p>
+                        <div class="publication-tags">
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Digital Forensics</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Image Processing</span>
+                        </div>
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.22541/au.171575721.19694510/v1" target="_blank" class="publication-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">My technical expertise</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-golang icon-golang"></i>
+                            <span>Golang</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python icon-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cocktail icon-gin"></i>
+                            <span>GIN Framework</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired icon-grpc"></i>
+                            <span>gRPC</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js icon-rest"></i>
+                            <span>REST API</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram icon-graphql"></i>
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt icon-rabbitmq"></i>
+                            <span>RabbitMQ</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paper-plane icon-nats"></i>
+                            <span>NATS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-js icon-javascript"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react icon-react"></i>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5 icon-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt icon-css3"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>DevOps & Cloud</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-dharmachakra icon-kubernetes"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-ship icon-helm"></i>
+                            <span>Helm</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-gitlab icon-gitlab"></i>
+                            <span>GitLab CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws icon-aws"></i>
+                            <span>AWS (DocumentDB, EC2, S3, Bedrock)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker icon-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt icon-git"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line icon-datadog"></i>
+                            <span>Datadog</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-python icon-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-laptop-code icon-colab"></i>
+                            <span>Google Colab</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot icon-huggingface"></i>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram icon-tensorflow"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye icon-opencv"></i>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf icon-mongodb"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database icon-postgresql"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database icon-arangodb"></i>
+                            <span>ArangoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube icon-redis"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Other Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-java icon-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-php icon-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-copyright icon-cpp"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cubes icon-microservices"></i>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my notable work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>ORDER-NEST</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed an order management system with low-level design and user authentication using Golang and GORM.
+                        Features include order processing, inventory management, and role-based access control.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Golang</span>
+                        <span class="tech-tag">GORM</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Authentication</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SaifulJnU/order-nest" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Books-Authors Management</h3>
+                    </div>
+                    <p class="project-description">
+                        Implemented REST and GraphQL APIs for book and author management using Golang GIN framework, JWT authentication,
+                        Zap logger, and Prometheus monitoring. Supports CRUD operations and advanced queries.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Golang</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Zap</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SaifulJnU/books-authors" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Smart Attendance System</h3>
+                    </div>
+                    <p class="project-description">
+                        Built an intelligent attendance system using computer vision and machine learning.
+                        Uses OpenCV for face detection and recognition, with a Flask web interface for easy management.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SaifulJnU/Smart_Attendance_System-Using-OpenCV" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Awards</h2>
+                <p class="section-subtitle">Recognition for my work</p>
+            </div>
+
+            <!-- Company and Academic Achievement (Horizontal) -->
+            <div class="achievement-horizontal">
+                <h3 class="achievement-horizontal-title">
+                    <i class="fas fa-award"></i>
+                    Company and Academic Achievement
+                </h3>
+                <div class="achievement-horizontal-list">
+                    <div class="achievement-horizontal-item">
+                        <div class="achievement-horizontal-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-horizontal-content">
+                            <h4>Cheese Ownership</h4>
+                            <p>Q1 2025 - Shikho Technologies Bangladesh Limited</p>
+                        </div>
+                    </div>
+                    <div class="achievement-horizontal-item">
+                        <div class="achievement-horizontal-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="achievement-horizontal-content">
+                            <h4>Academic Excellence</h4>
+                            <p>Last Semester GPA: 3.96/4.0 at Jagannath University</p>
+                        </div>
+                    </div>
+                    <div class="achievement-horizontal-item">
+                        <div class="achievement-horizontal-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="achievement-horizontal-content">
+                            <h4>Microsoft MSLA</h4>
+                            <p>Beta Level Achievement</p>
+                        </div>
+                    </div>
+                    <div class="achievement-horizontal-item">
+                        <div class="achievement-horizontal-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-horizontal-content">
+                            <h4>JnU IEEE Student Branch</h4>
+                            <p>Organizing Secretary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-category">
+                    <h3>
+                        <i class="fas fa-trophy"></i>
+                        Hackathons
+                    </h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <div class="achievement-medal gold">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Affine Blockchain Hackathon 2022</h4>
+                                <p class="achievement-rank">Top 9 out of 50 teams</p>
+                                <p class="achievement-team">Team: Crying-Obsidian</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-medal silver">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>BUET Blockchain Hackathon 2022</h4>
+                                <p class="achievement-rank">Top 12 out of 50 teams</p>
+                                <p class="achievement-team">Team: Crying-Obsidian</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-medal bronze">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Code Samurai Hackathon 2022</h4>
+                                <p class="achievement-rank">Top 43 out of 500 teams</p>
+                                <p class="achievement-team">Team: Crying-Obsidian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>
+                        <i class="fas fa-code"></i>
+                        Problem Solving
+                    </h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon icon-gfg">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4><a href="https://auth.geeksforgeeks.org/user/saifulcse98/" target="_blank" class="achievement-link">GeeksforGeeks</a></h4>
+                                <p class="achievement-rank">Rank 2 at Jagannath University</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon icon-leetcode">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4><a href="https://leetcode.com/u/Saiful300/" target="_blank" class="achievement-link">LeetCode</a></h4>
+                                <p class="achievement-rank">200+ problems solved</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon icon-hackerrank">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4><a href="https://www.hackerrank.com/saiful2561998" target="_blank" class="achievement-link">HackerRank</a></h4>
+                                <p class="achievement-rank">5★ Coder</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon icon-multiplatform">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Multiple Platforms</h4>
+                                <p class="achievement-rank">500+ problems on Codeforces, CodeChef, LightOJ, UVa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-category">
+                    <h3>
+                        <i class="fas fa-hands-helping"></i>
+                        Open Source & Community
+                    </h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Hacktoberfest 2020</h4>
+                                <p class="achievement-rank">Winner</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Hacktoberfest 2022</h4>
+                                <p class="achievement-rank">Contributor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:saiful.cse98@gmail.com">saiful.cse98@gmail.com</a>
+                            <a href="mailto:md-saiful.islam@udo.edu">md-saiful.islam@udo.edu</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+8801626692265">+880 1626 692265</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh</p>
+                            <p>Moving to Dortmund, Germany (April 2026)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links-section">
+                    <h3>Connect with me</h3>
+                    <div class="social-links-large">
+                        <a href="https://github.com/SaifulJnU" target="_blank" class="social-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://gitlab.com/SaifulJnU" target="_blank" class="social-card">
+                            <i class="fab fa-gitlab"></i>
+                            <span>GitLab</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" class="social-card">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" class="social-card">
+                            <i class="fab fa-stack-overflow"></i>
+                            <span>Stack Overflow</span>
+                        </a>
+                        <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" class="social-card">
+                            <i class="fas fa-code"></i>
+                            <span>Sololearn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Md Saiful Islam. All rights reserved.</p>
+                <p class="footer-subtitle">Built with <i class="fas fa-heart"></i> and passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
