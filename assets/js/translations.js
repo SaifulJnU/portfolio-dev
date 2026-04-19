@@ -6,6 +6,7 @@ const translations = {
             home: "Home",
             about: "About",
             experience: "Experience",
+            volunteering: "Volunteering",
             research: "Research",
             skills: "Skills",
             projects: "Projects",
@@ -22,7 +23,7 @@ const translations = {
                 'AI Researcher',
                 'Problem Solver'
             ],
-            description: "Software Engineer specializing in Backend Development with Go and AI Research. Currently pursuing MSc in Data Science at TU Dortmund University.",
+            description: "Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS. Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.",
             getInTouch: "Get In Touch",
             downloadCV: "Download CV"
         },
@@ -43,7 +44,7 @@ const translations = {
                     degree: "MSc in Data Science",
                     university: "TU Dortmund University",
                     location: "Dortmund, Germany",
-                    date: "Starting April 2026"
+                    date: "April 2026 – Present"
                 },
                 bsc: {
                     degree: "BSc in Computer Science and Engineering",
@@ -60,33 +61,53 @@ const translations = {
             subtitle: "My professional journey in software development",
             jobs: {
                 shikho: {
-                    title: "Software Engineer (Backend)",
+                    title: "Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
                     date: "July 2023 - Present",
                     location: "Dhaka, Hybrid",
                     responsibilities: [
-                        "Researched, designed, and implemented KPI service for data sync between PostgresDB and MongoDB using MongoStream",
-                        "Designed low level APIs and developed Analytics service for report-card using Nats, MongoStream, GORM (Bun)",
-                        "Implemented low level features for portal and CMS including sorting order, 100ms live-class integration, 2Factor OTP integration",
-                        "Maintained technical documentation using Postman and ClickUp"
+                        "Working in a team of six engineers to build a complete platform, designing and implementing microservices using Go, K8s, and AWS.",
+                        "Leading scalable analytics services generating 10K+ reports daily, improving student performance tracking speed using Go concurrency, NATS, MongoStream, and Redis.",
+                        "Engineered services for Programs and Live Exam modules using Go routines, reducing latency by 40% and supporting high-concurrency workflows for 3M+ users.",
+                        "Implemented event-driven integrations with the in-house CRM system, streamlining workflows for 200+ agents and contributing to 30% subscriber growth using Machinery (asynchronous task queue).",
+                        "Built a user-defined MCQ feature adopted by over 80% of enrolled users, enabling personalized assessments and becoming one of the platform's most popular features.",
+                        "Designed a MongoDB-to-PostgreSQL KPI pipeline enabling near real-time analytics and faster reporting for product teams.",
+                        "Migrated 50M+ records to UTC for multi-timezone support and integrated PayU payment and two-factor OTP verification for secure transactions in India."
                     ]
                 },
-                ahom: {
-                    title: "Blockchain Developer (Intern)",
-                    company: "AHOM Limited",
+                alxicorn: {
+                    title: "Blockchain Developer",
+                    company: "Alxicorn",
                     date: "May 2023 - July 2023",
                     location: "Dhaka, Remote",
                     responsibilities: [
-                        "Studied and reverse-engineered selected modules of the Cosmos SDK"
+                        "Built the backend services, analyzed and reverse-engineered core modules of the Cosmos SDK (Tendermint) using Golang, strengthening expertise in modern blockchain-based distributed system architecture and large-scale open-source codebases.",
+                        "Enhanced system design, debugging efficiency, unit testing, and technical documentation processes, accelerating knowledge sharing by 90% using AI-assisted tools."
+                    ]
+                }
+            }
+        },
+        // Volunteering Section
+        volunteering: {
+            title: "Volunteering",
+            subtitle: "Community contributions and student leadership",
+            roles: {
+                smartinternz: {
+                    title: "Student Partner",
+                    company: "SmartInternz",
+                    date: "June 2021 - August 2021",
+                    location: "Dhaka, Bangladesh",
+                    responsibilities: [
+                        "Developed a Smart Attendance System using Python, OpenCV, and Flask, enabling automated face-detection-based attendance tracking, and applied computer vision techniques for real-time detection and processing, improving accuracy over manual systems."
                     ]
                 },
-                smartbridge: {
-                    title: "Student Partner (Intern)",
-                    company: "SmartBridge",
-                    date: "Mar 2021 - June 2021",
-                    location: "India, Remote",
+                microsoft: {
+                    title: "Microsoft Learn Student Ambassador",
+                    company: "Microsoft",
+                    date: "December 2020 - December 2022",
+                    location: "Dhaka, Bangladesh",
                     responsibilities: [
-                        "Built a project named Smart Attendance System using OpenCV and Flask"
+                        "Engaged in technical learning programs, community-driven initiatives and conducted sessions regarding Azure Blob storage."
                     ]
                 }
             }
@@ -235,8 +256,8 @@ const translations = {
             email: "Email",
             phone: "Phone",
             location: "Location",
-            locationText: "Dhaka, Bangladesh",
-            locationText2: "Moving to Dortmund, Germany (April 2026)",
+            locationText: "Lindenhorster Straße 247",
+            locationText2: "44339 Dortmund, Germany",
             connectWith: "Connect with me"
         },
         // Footer
@@ -253,6 +274,7 @@ const translations = {
             home: "Startseite",
             about: "Über mich",
             experience: "Erfahrung",
+            volunteering: "Ehrenamt",
             research: "Forschung",
             skills: "Fähigkeiten",
             projects: "Projekte",
@@ -269,7 +291,7 @@ const translations = {
                 'KI-Forscher',
                 'Problemlöser'
             ],
-            description: "Software Engineer mit Schwerpunkt Backend-Entwicklung mit Go und KI-Forschung. Derzeit verfolge ich einen MSc in Data Science an der TU Dortmund.",
+            description: "Software Engineer mit 3+ Jahren Erfahrung im Aufbau skalierbarer Microservices mit Go, Kubernetes und AWS. Derzeit MSc Data Science an der TU Dortmund, um Expertise in angewandter KI und datengetriebenen Systemen zu vertiefen.",
             getInTouch: "Kontaktieren",
             downloadCV: "Lebenslauf herunterladen"
         },
@@ -290,7 +312,7 @@ const translations = {
                     degree: "MSc in Data Science",
                     university: "TU Dortmund",
                     location: "Dortmund, Deutschland",
-                    date: "Ab April 2026"
+                    date: "April 2026 – Heute"
                 },
                 bsc: {
                     degree: "BSc in Informatik und Ingenieurwesen",
@@ -307,33 +329,53 @@ const translations = {
             subtitle: "Meine berufliche Entwicklung in der Softwareentwicklung",
             jobs: {
                 shikho: {
-                    title: "Software Engineer (Backend)",
+                    title: "Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
                     date: "Juli 2023 - Heute",
                     location: "Dhaka, Hybrid",
                     responsibilities: [
-                        "Recherchiert, entworfen und implementiert KPI-Service für Datensynchronisation zwischen PostgresDB und MongoDB mit MongoStream",
-                        "Low-Level-APIs entworfen und Analytics-Service für Zeugnis entwickelt mit Nats, MongoStream, GORM (Bun)",
-                        "Low-Level-Features für Portal und CMS implementiert, einschließlich Sortierreihenfolge, 100ms Live-Klassen-Integration, 2-Faktor-OTP-Integration",
-                        "Technische Dokumentation mit Postman und ClickUp gepflegt"
+                        "In einem Team von sechs Ingenieuren an einer kompletten Plattform gearbeitet, Microservices mit Go, K8s und AWS entworfen und implementiert.",
+                        "Skalierbare Analytics-Services geleitet, die täglich 10K+ Berichte generieren, und die Geschwindigkeit der Schülerleistungsverfolgung mit Go Concurrency, NATS, MongoStream und Redis verbessert.",
+                        "Services für Programme und Live-Prüfungsmodule mit Go-Routinen entwickelt, Latenz um 40% reduziert und Hochlast-Workflows für 3M+ Nutzer unterstützt.",
+                        "Event-gesteuerte Integrationen mit dem internen CRM-System implementiert, Workflows für 200+ Agenten optimiert und 30% Abonnentenwachstum mit Machinery beigetragen.",
+                        "Eine benutzerdefinierte MCQ-Funktion entwickelt, die von über 80% der eingeschriebenen Nutzer genutzt wird und zu einem der beliebtesten Features der Plattform geworden ist.",
+                        "Eine MongoDB-zu-PostgreSQL-KPI-Pipeline entworfen, die Near-Echtzeit-Analysen und schnellere Berichte für Produktteams ermöglicht.",
+                        "50M+ Datensätze auf UTC migriert für Multi-Zeitzonenunterstützung und PayU-Zahlung sowie Zwei-Faktor-OTP-Verifizierung für sichere Transaktionen in Indien integriert."
                     ]
                 },
-                ahom: {
-                    title: "Blockchain-Entwickler (Praktikant)",
-                    company: "AHOM Limited",
+                alxicorn: {
+                    title: "Blockchain-Entwickler",
+                    company: "Alxicorn",
                     date: "Mai 2023 - Juli 2023",
                     location: "Dhaka, Remote",
                     responsibilities: [
-                        "Ausgewählte Module des Cosmos SDK studiert und rückentwickelt"
+                        "Backend-Services entwickelt, Kernmodule des Cosmos SDK (Tendermint) mit Golang analysiert und rückentwickelt, Expertise in moderner Blockchain-basierter verteilter Systemarchitektur vertieft.",
+                        "Systemdesign, Debugging-Effizienz, Unit-Tests und technische Dokumentationsprozesse verbessert, Wissenstransfer um 90% beschleunigt mit KI-gestützten Tools."
+                    ]
+                }
+            }
+        },
+        // Volunteering Section
+        volunteering: {
+            title: "Ehrenamt",
+            subtitle: "Community-Beiträge und studentische Führung",
+            roles: {
+                smartinternz: {
+                    title: "Studentischer Partner",
+                    company: "SmartInternz",
+                    date: "Juni 2021 - August 2021",
+                    location: "Dhaka, Bangladesch",
+                    responsibilities: [
+                        "Ein Smart Attendance System mit Python, OpenCV und Flask entwickelt, automatisierte gesichtserkennungsbasierte Anwesenheitsverfolgung ermöglicht und Computer-Vision-Techniken für Echtzeiterkennung angewandt."
                     ]
                 },
-                smartbridge: {
-                    title: "Studentischer Partner (Praktikant)",
-                    company: "SmartBridge",
-                    date: "März 2021 - Juni 2021",
-                    location: "Indien, Remote",
+                microsoft: {
+                    title: "Microsoft Learn Student Ambassador",
+                    company: "Microsoft",
+                    date: "Dezember 2020 - Dezember 2022",
+                    location: "Dhaka, Bangladesch",
                     responsibilities: [
-                        "Ein Projekt namens Smart Attendance System mit OpenCV und Flask entwickelt"
+                        "An technischen Lernprogrammen und community-getriebenen Initiativen teilgenommen und Sessions zu Azure Blob Storage durchgeführt."
                     ]
                 }
             }
@@ -482,8 +524,8 @@ const translations = {
             email: "E-Mail",
             phone: "Telefon",
             location: "Standort",
-            locationText: "Dhaka, Bangladesch",
-            locationText2: "Umzug nach Dortmund, Deutschland (April 2026)",
+            locationText: "Lindenhorster Straße 247",
+            locationText2: "44339 Dortmund, Deutschland",
             connectWith: "Verbinden Sie sich mit mir"
         },
         // Footer

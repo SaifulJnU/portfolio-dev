@@ -19,24 +19,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- 3D Morphing Background Shapes -->
-    <div class="bg-shape-1"></div>
-    <div class="bg-shape-2"></div>
-    <div class="bg-shape-3"></div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <a href="#home">
-                    <span class="logo-text">Saiful</span>
-                    <span class="logo-dot">.</span>
-                </a>
-            </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link active" data-en="Home" data-de="Startseite">Home</a></li>
                 <li><a href="#about" class="nav-link" data-en="About" data-de="Über mich">About</a></li>
                 <li><a href="#experience" class="nav-link" data-en="Experience" data-de="Erfahrung">Experience</a></li>
+                <li><a href="#volunteering" class="nav-link" data-en="Volunteering" data-de="Ehrenamt">Volunteering</a></li>
                 <li><a href="#research" class="nav-link" data-en="Research" data-de="Forschung">Research</a></li>
                 <li><a href="#skills" class="nav-link" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-en="Projects" data-de="Projekte">Projects</a></li>
@@ -80,8 +70,8 @@
                     <span class="cursor">|</span>
                 </h2>
                 <p class="hero-description">
-                    Software Engineer specializing in Backend Development with Go and AI Research.
-                    Currently pursuing MSc in Data Science at TU Dortmund University.
+                    Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS.
+                    Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
@@ -113,13 +103,23 @@
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
-                    <div class="image-bg"></div>
-                    <div class="code-snippet">
-                        <pre><code>package main
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="flip-hint"><i class="fas fa-user-secret"></i> Who's behind this?</div>
+                                <div class="image-bg"></div>
+                                <div class="code-snippet">
+                                    <pre><code>package main
 
 func main() {
     fmt.Println("Hello, World!")
 }</code></pre>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="Md-Saiful-Islam-photo.png" alt="Md Saiful Islam">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,10 +140,10 @@ func main() {
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
-                        I'm a passionate Software Engineer with expertise in backend development and a strong foundation in AI research.
-                        Currently working at Shikho Technologies, I specialize in building scalable microservices using Go, gRPC, and modern cloud technologies.
-                    </p>
+                    <h3 class="subsection-title">
+                        <i class="fas fa-chart-bar"></i>
+                        At a Glance
+                    </h3>
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-number">3+</div>
@@ -158,8 +158,31 @@ func main() {
                             <div class="stat-label">Publications</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">500+</div>
+                            <div class="stat-number">800+</div>
                             <div class="stat-label">Problems Solved</div>
+                        </div>
+                    </div>
+
+                    <div class="about-extra">
+                        <div class="about-extra-item">
+                            <div class="about-extra-label">
+                                <i class="fas fa-language"></i> Languages
+                            </div>
+                            <div class="about-extra-tags">
+                                <span class="about-tag">🇬🇧 English <em>B2</em></span>
+                                <span class="about-tag">🇧🇩 Bangla <em>Native</em></span>
+                                <span class="about-tag">🇩🇪 German <em>A1</em></span>
+                            </div>
+                        </div>
+                        <div class="about-extra-item">
+                            <div class="about-extra-label">
+                                <i class="fas fa-heart"></i> Hobbies
+                            </div>
+                            <div class="about-extra-tags">
+                                <span class="about-tag">🤝 Volunteering</span>
+                                <span class="about-tag">✈️ Travelling</span>
+                                <span class="about-tag">📚 Reading</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,7 +194,7 @@ func main() {
                     <div class="education-timeline">
                         <div class="education-item">
                             <div class="edu-icon edu-icon-img">
-                                <img src="https://play-lh.googleusercontent.com/gLJzGBXJZ4JElsCWz0N3eQQrUru7JCMHBy5RCHQbmz3mw_vK08jpoogfBMX-VBSgYQ" alt="TU Dortmund University">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Technische_Universit%C3%A4t_Dortmund_Logo_small.svg/960px-Technische_Universit%C3%A4t_Dortmund_Logo_small.svg.png" alt="TU Dortmund University">
                             </div>
                             <div class="edu-content">
                                 <h4>MSc in Data Science</h4>
@@ -180,12 +203,12 @@ func main() {
                                     <i class="fas fa-map-marker-alt"></i>
                                     Dortmund, Germany
                                 </p>
-                                <p class="edu-date">Starting April 2026</p>
+                                <p class="edu-date">April 2026 – Present</p>
                             </div>
                         </div>
                         <div class="education-item">
                             <div class="edu-icon edu-icon-img">
-                                <img src="https://brandlogovector.com/wp-content/uploads/2021/09/Jagannath-University-Logo.png" alt="Jagannath University">
+                                <img src="assets/images/jagannath-university-logo.png" alt="Jagannath University">
                             </div>
                             <div class="edu-content">
                                 <h4>BSc in Computer Science and Engineering</h4>
@@ -220,10 +243,10 @@ func main() {
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div class="timeline-title-group">
-                                <h3>Software Engineer (Backend)</h3>
+                                <h3>Software Engineer</h3>
                                 <p class="company">
                                     <i class="fas fa-building"></i>
-                                    Shikho Technologies Bangladesh Limited
+                                    <a href="https://shikho.com" target="_blank" rel="noopener noreferrer">Shikho Technologies Bangladesh Limited</a>
                                 </p>
                             </div>
                             <div class="timeline-meta">
@@ -237,32 +260,52 @@ func main() {
                                 </p>
                             </div>
                         </div>
+                        <p class="timeline-project"><a href="https://shikho.com" target="_blank" rel="noopener noreferrer" class="timeline-project-link">Shikho</a> — Series-A EdTech platform serving 3M+ users, featured in <strong>Forbes Asia 100 to Watch</strong>.</p>
                         <ul class="timeline-responsibilities">
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Researched and implemented KPI service for data sync between PostgresDB and MongoDB using MongoStream
+                                Working in a team of six engineers to build a complete platform, designing and implementing microservices using Go, K8s, and AWS.
                             </li>
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Developed APIs for generic booking system using gRPC and graphql-go
+                                Leading scalable analytics services generating 10K+ reports daily, improving student performance tracking speed using Go concurrency, NATS, MongoStream, and Redis.
                             </li>
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Implemented portal features: batch filtering, sorting order, 100ms live-class integration, and 2-Factor OTP integration
+                                Engineered services for Programs and Live Exam modules using Go routines, reducing latency by 40% and supporting high-concurrency workflows for 3M+ users.
                             </li>
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Maintained technical documentation using Postman and ClickUp
+                                Implemented event-driven integrations with the in-house CRM system, streamlining workflows for 200+ agents and contributing to 30% subscriber growth using Machinery (asynchronous task queue).
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built a user-defined MCQ feature adopted by over 80% of enrolled users, enabling personalized assessments and becoming one of the platform's most popular features.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Designed a MongoDB-to-PostgreSQL KPI pipeline enabling near real-time analytics and faster reporting for product teams.
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Migrated 50M+ records to UTC for multi-timezone support and integrated PayU payment and two-factor OTP verification for secure transactions in India.
                             </li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-tag">Golang</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">ArangoDB</span>
-                            <span class="tech-tag">GraphQL</span>
                             <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">ArangoDB</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
                             <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">NATS</span>
+                            <span class="tech-tag">Machinery</span>
                         </div>
                     </div>
                 </div>
@@ -272,10 +315,10 @@ func main() {
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div class="timeline-title-group">
-                                <h3>Blockchain Developer (Intern)</h3>
+                                <h3>Blockchain Developer</h3>
                                 <p class="company">
                                     <i class="fas fa-building"></i>
-                                    AHOM Limited
+                                    Alxicorn
                                 </p>
                             </div>
                             <div class="timeline-meta">
@@ -289,22 +332,85 @@ func main() {
                                 </p>
                             </div>
                         </div>
+                        <p class="timeline-project"><a href="https://www.linkedin.com/company/alxicorn" target="_blank" rel="noopener noreferrer" class="timeline-project-link">Alxicorn</a> — UK-based IT consultancy specialising in scalable web/mobile engineering and blockchain reverse engineering.</p>
                         <ul class="timeline-responsibilities">
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Developed and modified modules for the Cosmos SDK
+                                Built the backend services, analyzed and reverse-engineered core modules of the Cosmos SDK (Tendermint) using Golang, strengthening expertise in modern blockchain-based distributed system architecture and large-scale open-source codebases.
                             </li>
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Worked on Layer 1 Blockchain architecture and implementation
+                                Enhanced system design, debugging efficiency, unit testing, and technical documentation processes, accelerating knowledge sharing by 90% using AI-assisted tools.
                             </li>
                         </ul>
                         <div class="tech-stack">
                             <span class="tech-tag">Golang</span>
-                            <span class="tech-tag">gRPC</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Protobuf</span>
                             <span class="tech-tag">Cosmos SDK</span>
+                            <span class="tech-tag">Tendermint</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">gRPC</span>
+                            <span class="tech-tag">Ethereum</span>
+                            <span class="tech-tag">EtherJS</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Metamask</span>
+                            <span class="tech-tag">Infura</span>
+                            <span class="tech-tag">Ganache</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Volunteering</h2>
+                <p class="section-subtitle">Community contributions and student leadership</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title-group">
+                                <h3>Student Partner</h3>
+                                <p class="company">
+                                    <i class="fas fa-building"></i>
+                                    SmartInternz
+                                </p>
+                            </div>
+                            <div class="timeline-meta">
+                                <p class="timeline-date">
+                                    <i class="fas fa-calendar"></i>
+                                    June 2021 - August 2021
+                                </p>
+                                <p class="timeline-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Dhaka, Bangladesh
+                                </p>
+                            </div>
+                        </div>
+                        <p class="timeline-project">
+                            <strong>Project:</strong> <a href="https://smartinternz.com" target="_blank" class="timeline-link">SmartInternz</a> — AI-first experiential learning platform that has upskilled 2M+ learners across 3,500+ institutions.
+                        </p>
+                        <ul class="timeline-responsibilities">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developed a <strong>Smart Attendance System</strong> using Python, OpenCV, and Flask, enabling automated face-detection-based attendance tracking, and applied computer vision techniques for real-time detection and processing, improving accuracy over manual systems.
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Excel</span>
                         </div>
                     </div>
                 </div>
@@ -314,33 +420,35 @@ func main() {
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div class="timeline-title-group">
-                                <h3>Student Partner (Intern)</h3>
+                                <h3>Microsoft Learn Student Ambassador</h3>
                                 <p class="company">
                                     <i class="fas fa-building"></i>
-                                    SmartBridge
+                                    Microsoft
                                 </p>
                             </div>
                             <div class="timeline-meta">
                                 <p class="timeline-date">
                                     <i class="fas fa-calendar"></i>
-                                    Mar 2021 - June 2021
+                                    December 2020 - December 2022
                                 </p>
                                 <p class="timeline-location">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    India, Remote
+                                    Dhaka, Bangladesh
                                 </p>
                             </div>
                         </div>
+                        <p class="timeline-project">
+                            <strong>Program:</strong> <a href="https://studentambassadors.microsoft.com" target="_blank" class="timeline-link">MLSA</a> — A global community program by Microsoft that empowers students to lead local technology circles, and gain proficiency in Azure.
+                        </p>
                         <ul class="timeline-responsibilities">
                             <li>
                                 <i class="fas fa-check-circle"></i>
-                                Built a project named Smart Attendance System using OpenCV and Flask
+                                Engaged in technical learning programs, community-driven initiatives and conducted sessions regarding Azure Blob storage.
                             </li>
                         </ul>
                         <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Microsoft Azure</span>
+                            <span class="tech-tag">Blob Storage</span>
                         </div>
                     </div>
                 </div>
@@ -356,7 +464,7 @@ func main() {
                 <p class="section-subtitle">My contributions to AI and blockchain research</p>
             </div>
             <div class="publications-grid">
-                <div class="publication-card">
+                <a href="https://dro.deakin.edu.au/articles/journal_contribution/A_conceptual_IoT_framework_based_on_Anova-F_feature_selection_for_chronic_kidney_disease_detection_using_deep_learning_approach/27616899?file=50240433" target="_blank" class="publication-card">
                     <div class="publication-icon">
                         <i class="fas fa-file-medical"></i>
                     </div>
@@ -380,16 +488,10 @@ func main() {
                             <span class="tag">Healthcare</span>
                             <span class="tag">Feature Selection</span>
                         </div>
-                        <div class="publication-links">
-                            <a href="https://dro.deakin.edu.au/articles/journal_contribution/A_conceptual_IoT_framework_based_on_Anova-F_feature_selection_for_chronic_kidney_disease_detection_using_deep_learning_approach/27616899?file=50240433" target="_blank" class="publication-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                View Paper
-                            </a>
-                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="publication-card">
+                <a href="https://www.authorea.com/doi/full/10.22541/au.171575721.19694510" target="_blank" class="publication-card">
                     <div class="publication-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -413,14 +515,8 @@ func main() {
                             <span class="tag">Security</span>
                             <span class="tag">Image Processing</span>
                         </div>
-                        <div class="publication-links">
-                            <a href="https://www.authorea.com/doi/full/10.22541/au.171575721.19694510" target="_blank" class="publication-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                View Paper
-                            </a>
-                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -472,31 +568,9 @@ func main() {
                             <i class="fas fa-paper-plane icon-nats"></i>
                             <span>NATS</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Frontend -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-desktop"></i>
-                        <h3>Frontend Development</h3>
-                    </div>
-                    <div class="skills-list">
                         <div class="skill-item">
-                            <i class="fab fa-js icon-javascript"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react icon-react"></i>
-                            <span>ReactJS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5 icon-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt icon-css3"></i>
-                            <span>CSS3</span>
+                            <i class="fas fa-cubes icon-microservices"></i>
+                            <span>Microservices</span>
                         </div>
                     </div>
                 </div>
@@ -539,6 +613,58 @@ func main() {
                     </div>
                 </div>
 
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf icon-mongodb"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database icon-postgresql"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database icon-arangodb"></i>
+                            <span>ArangoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube icon-redis"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-js icon-javascript"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react icon-react"></i>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5 icon-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt icon-css3"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- AI & Machine Learning -->
                 <div class="skill-category">
                     <div class="category-header">
@@ -569,32 +695,6 @@ func main() {
                     </div>
                 </div>
 
-                <!-- Databases -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <i class="fas fa-leaf icon-mongodb"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database icon-postgresql"></i>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database icon-arangodb"></i>
-                            <span>ArangoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cube icon-redis"></i>
-                            <span>Redis</span>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Other Technologies -->
                 <div class="skill-category">
                     <div class="category-header">
@@ -613,10 +713,6 @@ func main() {
                         <div class="skill-item">
                             <i class="fas fa-copyright icon-cpp"></i>
                             <span>C++</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cubes icon-microservices"></i>
-                            <span>Microservices</span>
                         </div>
                     </div>
                 </div>
@@ -844,7 +940,7 @@ func main() {
                             </div>
                             <div class="achievement-content">
                                 <h4>Multiple Platforms</h4>
-                                <p class="achievement-rank">500+ problems on Codeforces, CodeChef, LightOJ, UVa</p>
+                                <p class="achievement-rank">800+ problems on Codeforces, CodeChef, LightOJ, UVa</p>
                             </div>
                         </div>
                     </div>
@@ -905,7 +1001,7 @@ func main() {
                         </div>
                         <div class="contact-details">
                             <h4>Phone</h4>
-                            <a href="tel:+8801626692265">+880 1626 692265</a>
+                            <a href="tel:+4917689734924">+49 176 89734924</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -914,9 +1010,23 @@ func main() {
                         </div>
                         <div class="contact-details">
                             <h4>Location</h4>
-                            <p>Dhaka, Bangladesh</p>
-                            <p>Moving to Dortmund, Germany (April 2026)</p>
+                            <p>Lindenhorster Straße 247</p>
+                            <p>44339 Dortmund, Germany</p>
                         </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-wrapper">
+                        <div class="map-label">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Dortmund, Germany
+                        </div>
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=7.4300%2C51.5200%2C7.5100%2C51.5500&layer=mapnik&marker=51.5353%2C7.4653"
+                            title="Location map"
+                            loading="lazy"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 <div class="contact-links-section">

@@ -8,19 +8,11 @@ function setTheme(theme) {
     currentTheme = theme;
     localStorage.setItem('theme', theme);
 
-    if (theme === 'light') {
-        document.body.classList.add('light-mode');
-    } else {
-        document.body.classList.remove('light-mode');
-    }
+    document.body.classList.remove('light-mode');
+    if (theme === 'light') document.body.classList.add('light-mode');
 
-    // Update active button
     document.querySelectorAll('.theme-btn').forEach(btn => {
-        if (btn.dataset.theme === theme) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
+        btn.classList.toggle('active', btn.dataset.theme === theme);
     });
 }
 
@@ -44,88 +36,112 @@ function safeUpdate(selector, updateFn) {
     return false;
 }
 
+function q(sel) { return document.querySelector(sel); }
+function qa(sel) { return document.querySelectorAll(sel); }
+function setText(sel, val) { const el = typeof sel === 'string' ? q(sel) : sel; if (el && val !== undefined) el.textContent = val; }
+function setHTML(sel, val) { const el = typeof sel === 'string' ? q(sel) : sel; if (el && val !== undefined) el.innerHTML = val; }
+
 function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
 
-    if (!translations || !translations[lang]) {
-        console.error('Translation not found for language:', lang);
-        return;
-    }
-
+    if (!translations || !translations[lang]) return;
     const t = translations[lang];
 
-    // Update navigation
-    document.querySelectorAll('.nav-link').forEach((link, index) => {
+    // Navigation
+    qa('.nav-link').forEach((link, i) => {
         const keys = Object.keys(t.nav);
-        if (keys[index]) {
-            link.textContent = t.nav[keys[index]];
-        }
+        if (keys[i]) link.textContent = t.nav[keys[i]];
     });
 
-    // Update hero section
-    document.querySelector('.greeting').textContent = t.hero.greeting;
-    document.querySelector('.hero-description').textContent = t.hero.description;
-    document.querySelector('.btn-primary').innerHTML = `<i class="fas fa-envelope"></i> ${t.hero.getInTouch}`;
-    document.querySelector('.btn-secondary').innerHTML = `<i class="fas fa-download"></i> ${t.hero.downloadCV}`;
+    // Hero
+    setText('.greeting', t.hero.greeting);
+    setText('.hero-description', t.hero.description);
+    setHTML('.btn-primary', `<i class="fas fa-envelope"></i> ${t.hero.getInTouch}`);
+    setHTML('.btn-secondary', `<i class="fas fa-download"></i> ${t.hero.downloadCV}`);
 
-    // Update typing animation with new roles
+    // Carousel roles
     textArray.length = 0;
     textArray.push(...t.hero.roles);
 
-    // Update about section
-    document.querySelector('#about .section-title').textContent = t.about.title;
-    document.querySelector('#about .section-subtitle').textContent = t.about.subtitle;
-    document.querySelector('.about-intro').textContent = t.about.intro;
+    // About
+    setText('#about .section-title', t.about.title);
+    setText('#about .section-subtitle', t.about.subtitle);
 
-    // Update stats
-    const statLabels = document.querySelectorAll('.stat-label');
-    const statKeys = Object.keys(t.about.stats);
-    statLabels.forEach((label, index) => {
-        if (statKeys[index]) {
-            label.textContent = t.about.stats[statKeys[index]];
-        }
+    // Stats
+    qa('.stat-label').forEach((label, i) => {
+        const keys = Object.keys(t.about.stats);
+        if (keys[i]) label.textContent = t.about.stats[keys[i]];
     });
 
-    // Update education
-    document.querySelector('.subsection-title').innerHTML = `<i class="fas fa-graduation-cap"></i> ${t.about.education.title}`;
+    // Education title — target the education container specifically
+    setHTML('.education-container .subsection-title', `<i class="fas fa-graduation-cap"></i> ${t.about.education.title}`);
 
-    const eduContents = document.querySelectorAll('.edu-content');
+    const eduContents = qa('.edu-content');
     if (eduContents[0]) {
-        eduContents[0].querySelector('h4').textContent = t.about.education.msc.degree;
-        eduContents[0].querySelector('.edu-institution').textContent = t.about.education.msc.university;
-        eduContents[0].querySelector('.edu-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.about.education.msc.location}`;
-        eduContents[0].querySelector('.edu-date').textContent = t.about.education.msc.date;
+        setText(eduContents[0].querySelector('h4'), t.about.education.msc.degree);
+        setText(eduContents[0].querySelector('.edu-institution'), t.about.education.msc.university);
+        setHTML(eduContents[0].querySelector('.edu-location'), `<i class="fas fa-map-marker-alt"></i> ${t.about.education.msc.location}`);
+        setText(eduContents[0].querySelector('.edu-date'), t.about.education.msc.date);
     }
     if (eduContents[1]) {
-        eduContents[1].querySelector('h4').textContent = t.about.education.bsc.degree;
-        eduContents[1].querySelector('.edu-institution').textContent = t.about.education.bsc.university;
-        eduContents[1].querySelector('.edu-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${t.about.education.bsc.location}`;
-        eduContents[1].querySelector('.edu-date').textContent = t.about.education.bsc.date;
-        eduContents[1].querySelector('.edu-gpa').innerHTML = `<i class="fas fa-award"></i> ${t.about.education.bsc.gpa}`;
+        setText(eduContents[1].querySelector('h4'), t.about.education.bsc.degree);
+        setText(eduContents[1].querySelector('.edu-institution'), t.about.education.bsc.university);
+        setHTML(eduContents[1].querySelector('.edu-location'), `<i class="fas fa-map-marker-alt"></i> ${t.about.education.bsc.location}`);
+        setText(eduContents[1].querySelector('.edu-date'), t.about.education.bsc.date);
+        setHTML(eduContents[1].querySelector('.edu-gpa'), `<i class="fas fa-award"></i> ${t.about.education.bsc.gpa}`);
     }
 
-    // Update experience section
-    document.querySelector('#experience .section-title').textContent = t.experience.title;
-    document.querySelector('#experience .section-subtitle').textContent = t.experience.subtitle;
+    // Experience
+    setText('#experience .section-title', t.experience.title);
+    setText('#experience .section-subtitle', t.experience.subtitle);
 
-    const timelineContents = document.querySelectorAll('.timeline-content');
+    const expContents = qa('#experience .timeline-content');
     const jobKeys = Object.keys(t.experience.jobs);
-    timelineContents.forEach((content, index) => {
-        if (jobKeys[index]) {
-            const job = t.experience.jobs[jobKeys[index]];
-            content.querySelector('h3').textContent = job.title;
-            content.querySelector('.company').innerHTML = `<i class="fas fa-building"></i> ${job.company}`;
-            content.querySelector('.timeline-date').innerHTML = `<i class="fas fa-calendar"></i> ${job.date}`;
-            content.querySelector('.timeline-location').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${job.location}`;
-
-            const responsibilities = content.querySelectorAll('.timeline-responsibilities li');
-            responsibilities.forEach((resp, i) => {
-                if (job.responsibilities[i]) {
-                    resp.innerHTML = `<i class="fas fa-check-circle"></i> ${job.responsibilities[i]}`;
-                }
-            });
+    expContents.forEach((content, index) => {
+        if (!jobKeys[index]) return;
+        const job = t.experience.jobs[jobKeys[index]];
+        setText(content.querySelector('h3'), job.title);
+        const companyEl = content.querySelector('.company');
+        if (companyEl) {
+            const link = companyEl.querySelector('a');
+            if (link) {
+                link.textContent = job.company;
+            } else {
+                companyEl.innerHTML = `<i class="fas fa-building"></i> ${job.company}`;
+            }
         }
+        setHTML(content.querySelector('.timeline-date'), `<i class="fas fa-calendar"></i> ${job.date}`);
+        setHTML(content.querySelector('.timeline-location'), `<i class="fas fa-map-marker-alt"></i> ${job.location}`);
+        content.querySelectorAll('.timeline-responsibilities li').forEach((resp, i) => {
+            if (job.responsibilities[i]) resp.innerHTML = `<i class="fas fa-check-circle"></i> ${job.responsibilities[i]}`;
+        });
+    });
+
+    // Volunteering
+    setText('#volunteering .section-title', t.volunteering.title);
+    setText('#volunteering .section-subtitle', t.volunteering.subtitle);
+
+    const volContents = qa('#volunteering .timeline-content');
+    const volKeys = Object.keys(t.volunteering.roles);
+    volContents.forEach((content, index) => {
+        if (!volKeys[index]) return;
+        const role = t.volunteering.roles[volKeys[index]];
+        setText(content.querySelector('h3'), role.title);
+        const companyEl = content.querySelector('.company');
+        if (companyEl) {
+            const link = companyEl.querySelector('a');
+            if (link) {
+                link.textContent = role.company;
+            } else {
+                companyEl.innerHTML = `<i class="fas fa-building"></i> ${role.company}`;
+            }
+        }
+        setHTML(content.querySelector('.timeline-date'), `<i class="fas fa-calendar"></i> ${role.date}`);
+        setHTML(content.querySelector('.timeline-location'), `<i class="fas fa-map-marker-alt"></i> ${role.location}`);
+        content.querySelectorAll('.timeline-responsibilities li').forEach((resp, i) => {
+            if (role.responsibilities[i]) resp.innerHTML = `<i class="fas fa-check-circle"></i> ${role.responsibilities[i]}`;
+        });
     });
 
     // Update research section
