@@ -823,6 +823,7 @@ body.light-mode .language-toggle {
     width: 100%;
     height: 400px;
     perspective: 1200px;
+    cursor: pointer;
 }
 
 .flip-card-inner {
@@ -833,7 +834,8 @@ body.light-mode .language-toggle {
     transition: transform 0.85s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -2891,4 +2893,158 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
+}
+
+/* ==================== */
+/* Page Load Fade-in    */
+/* ==================== */
+body {
+    animation: pageLoad 0.5s ease 0.1s both;
+}
+
+@keyframes pageLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ==================== */
+/* Particle             */
+/* ==================== */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* ==================== */
+/* Skip Link            */
+/* ==================== */
+.skip-link {
+    position: absolute;
+    top: -48px;
+    left: 0;
+    padding: 8px 16px;
+    background: var(--primary-dark);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    z-index: 10000;
+    transition: top var(--transition-fast);
+}
+
+.skip-link--visible {
+    top: 0;
+}
+
+/* ==================== */
+/* Back to Top          */
+/* ==================== */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity var(--transition-normal),
+                visibility var(--transition-normal),
+                transform var(--transition-normal),
+                box-shadow var(--transition-normal);
+    z-index: 999;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ==================== */
+/* Toast Notification   */
+/* ==================== */
+.toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-xl);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+    pointer-events: none;
+}
+
+.toast--visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* ==================== */
+/* Reduced Motion       */
+/* ==================== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .particle { display: none !important; }
+    .cursor { animation: none !important; }
+    .gradient-bg { animation: none !important; }
+}
+
+/* ==================== */
+/* Print Styles         */
+/* ==================== */
+@media print {
+    .navbar,
+    .hero-background,
+    .particles,
+    .back-to-top,
+    .theme-toggle,
+    .language-toggle,
+    .hamburger,
+    .contact-map,
+    .scroll-indicator,
+    .toast { display: none !important; }
+
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 12pt;
+    }
+
+    a { color: inherit !important; text-decoration: underline; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10pt; }
+
+    .section { page-break-inside: avoid; padding: 1rem 0; }
+    .timeline-item, .project-card, .publication-card { page-break-inside: avoid; }
+
+    .hero-content { padding-top: 2rem; }
+    .hero-image { display: none !important; }
 }

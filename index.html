@@ -6,8 +6,29 @@
     <title>Md Saiful Islam | Software Engineer & AI Researcher</title>
     <meta name="description" content="Portfolio of Md Saiful Islam - Software Engineer specializing in Backend Development and AI Research">
 
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Md Saiful Islam | Software Engineer & AI Researcher">
+    <meta property="og:description" content="Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS. MSc Data Science student at TU Dortmund.">
+    <meta property="og:image" content="assets/images/Md-Saiful-Islam-photo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Md Saiful Islam | Software Engineer & AI Researcher">
+    <meta name="twitter:description" content="Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS.">
+    <meta name="twitter:image" content="assets/images/Md-Saiful-Islam-photo.png">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236366f1'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' font-family='Space Grotesk, sans-serif' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,42 +38,65 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md Saiful Islam",
+      "jobTitle": "Software Engineer",
+      "description": "Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS.",
+      "email": "saiful.cse98@gmail.com",
+      "sameAs": [
+        "https://github.com/SaifulJnU",
+        "https://www.linkedin.com/in/md-saiful-islam-swe/",
+        "https://gitlab.com/SaifulJnU"
+      ],
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "TU Dortmund University" },
+        { "@type": "CollegeOrUniversity", "name": "Jagannath University" }
+      ],
+      "knowsAbout": ["Golang", "Kubernetes", "Microservices", "AWS", "Machine Learning", "Go", "gRPC"]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active" data-en="Home" data-de="Startseite">Home</a></li>
-                <li><a href="#about" class="nav-link" data-en="About" data-de="Über mich">About</a></li>
-                <li><a href="#experience" class="nav-link" data-en="Experience" data-de="Erfahrung">Experience</a></li>
-                <li><a href="#volunteering" class="nav-link" data-en="Volunteering" data-de="Ehrenamt">Volunteering</a></li>
-                <li><a href="#research" class="nav-link" data-en="Research" data-de="Forschung">Research</a></li>
-                <li><a href="#skills" class="nav-link" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
-                <li><a href="#projects" class="nav-link" data-en="Projects" data-de="Projekte">Projects</a></li>
-                <li><a href="#achievements" class="nav-link" data-en="Achievements" data-de="Erfolge">Achievements</a></li>
-                <li><a href="#contact" class="nav-link" data-en="Contact" data-de="Kontakt">Contact</a></li>
+            <ul class="nav-menu" id="navMenu" role="list">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="language-toggle" id="languageToggle">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn" type="button" data-lang="de" aria-label="Zu Deutsch wechseln">DE</button>
             </div>
             <div class="theme-toggle" id="themeToggle">
-                <button class="theme-btn active" data-theme="dark" title="Dark Mode">
-                    <i class="fas fa-moon"></i>
+                <button class="theme-btn active" type="button" data-theme="dark" aria-label="Dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
                 </button>
-                <button class="theme-btn" data-theme="light" title="Light Mode">
-                    <i class="fas fa-sun"></i>
+                <button class="theme-btn" type="button" data-theme="light" aria-label="Light mode">
+                    <i class="fas fa-sun" aria-hidden="true"></i>
                 </button>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
+    <main>
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
@@ -78,26 +122,26 @@
                         <i class="fas fa-envelope"></i>
                         Get In Touch
                     </a>
-                    <a href="assets/docs/Md_Saiful_Islam_Resume.pdf" class="btn btn-secondary" download>
+                    <a href="assets/docs/Md_Saiful_Islam_Resume.pdf" class="btn btn-secondary" download="Md_Saiful_Islam_Resume_fs3.pdf">
                         <i class="fas fa-download"></i>
                         Download CV
                     </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/SaifulJnU" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
+                    <a href="https://github.com/SaifulJnU" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="https://gitlab.com/SaifulJnU" target="_blank" aria-label="GitLab">
-                        <i class="fab fa-gitlab"></i>
+                    <a href="https://gitlab.com/SaifulJnU" target="_blank" rel="noopener noreferrer" aria-label="GitLab profile">
+                        <i class="fab fa-gitlab" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" aria-label="Stack Overflow">
-                        <i class="fab fa-stack-overflow"></i>
+                    <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow profile">
+                        <i class="fab fa-stack-overflow" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" aria-label="Sololearn">
-                        <i class="fas fa-graduation-cap"></i>
+                    <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" rel="noopener noreferrer" aria-label="Sololearn profile">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -117,7 +161,7 @@ func main() {
                                 </div>
                             </div>
                             <div class="flip-card-back">
-                                <img src="Md-Saiful-Islam-photo.png" alt="Md Saiful Islam">
+                                <img src="assets/images/Md-Saiful-Islam-photo.png" alt="Md Saiful Islam - Software Engineer" width="400" height="400" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -125,8 +169,8 @@ func main() {
             </div>
         </div>
         <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
+            <a href="#about" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
             </a>
         </div>
     </section>
@@ -194,7 +238,7 @@ func main() {
                     <div class="education-timeline">
                         <div class="education-item">
                             <div class="edu-icon edu-icon-img">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Technische_Universit%C3%A4t_Dortmund_Logo_small.svg/960px-Technische_Universit%C3%A4t_Dortmund_Logo_small.svg.png" alt="TU Dortmund University">
+                                <img src="assets/images/tu-dortmund-logo.svg" alt="TU Dortmund University" width="48" height="48" loading="lazy">
                             </div>
                             <div class="edu-content">
                                 <h4>MSc in Data Science</h4>
@@ -208,7 +252,7 @@ func main() {
                         </div>
                         <div class="education-item">
                             <div class="edu-icon edu-icon-img">
-                                <img src="assets/images/jagannath-university-logo.png" alt="Jagannath University">
+                                <img src="assets/images/jagannath-university-logo.png" alt="Jagannath University" width="48" height="48" loading="lazy">
                             </div>
                             <div class="edu-content">
                                 <h4>BSc in Computer Science and Engineering</h4>
@@ -396,7 +440,7 @@ func main() {
                             </div>
                         </div>
                         <p class="timeline-project">
-                            <strong>Project:</strong> <a href="https://smartinternz.com" target="_blank" class="timeline-link">SmartInternz</a> — AI-first experiential learning platform that has upskilled 2M+ learners across 3,500+ institutions.
+                            <strong>Project:</strong> <a href="https://smartinternz.com" target="_blank" rel="noopener noreferrer" class="timeline-link">SmartInternz</a> — AI-first experiential learning platform that has upskilled 2M+ learners across 3,500+ institutions.
                         </p>
                         <ul class="timeline-responsibilities">
                             <li>
@@ -438,7 +482,7 @@ func main() {
                             </div>
                         </div>
                         <p class="timeline-project">
-                            <strong>Program:</strong> <a href="https://studentambassadors.microsoft.com" target="_blank" class="timeline-link">MLSA</a> — A global community program by Microsoft that empowers students to lead local technology circles, and gain proficiency in Azure.
+                            <strong>Program:</strong> <a href="https://studentambassadors.microsoft.com" target="_blank" rel="noopener noreferrer" class="timeline-link">MLSA</a> — A global community program by Microsoft that empowers students to lead local technology circles, and gain proficiency in Azure.
                         </p>
                         <ul class="timeline-responsibilities">
                             <li>
@@ -464,7 +508,7 @@ func main() {
                 <p class="section-subtitle">My contributions to AI and blockchain research</p>
             </div>
             <div class="publications-grid">
-                <a href="https://dro.deakin.edu.au/articles/journal_contribution/A_conceptual_IoT_framework_based_on_Anova-F_feature_selection_for_chronic_kidney_disease_detection_using_deep_learning_approach/27616899?file=50240433" target="_blank" class="publication-card">
+                <a href="https://dro.deakin.edu.au/articles/journal_contribution/A_conceptual_IoT_framework_based_on_Anova-F_feature_selection_for_chronic_kidney_disease_detection_using_deep_learning_approach/27616899?file=50240433" target="_blank" rel="noopener noreferrer" class="publication-card">
                     <div class="publication-icon">
                         <i class="fas fa-file-medical"></i>
                     </div>
@@ -491,7 +535,7 @@ func main() {
                     </div>
                 </a>
 
-                <a href="https://www.authorea.com/doi/full/10.22541/au.171575721.19694510" target="_blank" class="publication-card">
+                <a href="https://www.authorea.com/doi/full/10.22541/au.171575721.19694510" target="_blank" rel="noopener noreferrer" class="publication-card">
                     <div class="publication-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -746,7 +790,7 @@ func main() {
                         <span class="tech-tag">Authentication</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/SaifulJnU/order-nest" target="_blank" class="project-link">
+                        <a href="https://github.com/SaifulJnU/order-nest" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fab fa-github"></i>
                             View Code
                         </a>
@@ -772,7 +816,7 @@ func main() {
                         <span class="tech-tag">Prometheus</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/SaifulJnU/books-authors" target="_blank" class="project-link">
+                        <a href="https://github.com/SaifulJnU/books-authors" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fab fa-github"></i>
                             View Code
                         </a>
@@ -797,7 +841,7 @@ func main() {
                         <span class="tech-tag">Machine Learning</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/SaifulJnU/Smart_Attendance_System-Using-OpenCV" target="_blank" class="project-link">
+                        <a href="https://github.com/SaifulJnU/Smart_Attendance_System-Using-OpenCV" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fab fa-github"></i>
                             View Code
                         </a>
@@ -912,7 +956,7 @@ func main() {
                                 <i class="fas fa-code"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4><a href="https://auth.geeksforgeeks.org/user/saifulcse98/" target="_blank" class="achievement-link">GeeksforGeeks</a></h4>
+                                <h4><a href="https://auth.geeksforgeeks.org/user/saifulcse98/" target="_blank" rel="noopener noreferrer" class="achievement-link">GeeksforGeeks</a></h4>
                                 <p class="achievement-rank">Rank 2 at Jagannath University</p>
                             </div>
                         </div>
@@ -921,7 +965,7 @@ func main() {
                                 <i class="fas fa-terminal"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4><a href="https://leetcode.com/u/Saiful300/" target="_blank" class="achievement-link">LeetCode</a></h4>
+                                <h4><a href="https://leetcode.com/u/Saiful300/" target="_blank" rel="noopener noreferrer" class="achievement-link">LeetCode</a></h4>
                                 <p class="achievement-rank">200+ problems solved</p>
                             </div>
                         </div>
@@ -930,7 +974,7 @@ func main() {
                                 <i class="fas fa-code"></i>
                             </div>
                             <div class="achievement-content">
-                                <h4><a href="https://www.hackerrank.com/saiful2561998" target="_blank" class="achievement-link">HackerRank</a></h4>
+                                <h4><a href="https://www.hackerrank.com/saiful2561998" target="_blank" rel="noopener noreferrer" class="achievement-link">HackerRank</a></h4>
                                 <p class="achievement-rank">5★ Coder</p>
                             </div>
                         </div>
@@ -1032,24 +1076,24 @@ func main() {
                 <div class="contact-links-section">
                     <h3>Connect with me</h3>
                     <div class="social-links-large">
-                        <a href="https://github.com/SaifulJnU" target="_blank" class="social-card">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/SaifulJnU" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://gitlab.com/SaifulJnU" target="_blank" class="social-card">
-                            <i class="fab fa-gitlab"></i>
+                        <a href="https://gitlab.com/SaifulJnU" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <i class="fab fa-gitlab" aria-hidden="true"></i>
                             <span>GitLab</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" class="social-card">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/md-saiful-islam-swe/" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" class="social-card">
-                            <i class="fab fa-stack-overflow"></i>
+                        <a href="https://stackoverflow.com/users/17939050/md-saiful-islam" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <i class="fab fa-stack-overflow" aria-hidden="true"></i>
                             <span>Stack Overflow</span>
                         </a>
-                        <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" class="social-card">
-                            <i class="fas fa-code"></i>
+                        <a href="https://www.sololearn.com/en/profile/10132564" target="_blank" rel="noopener noreferrer" class="social-card">
+                            <i class="fas fa-code" aria-hidden="true"></i>
                             <span>Sololearn</span>
                         </a>
                     </div>
@@ -1057,6 +1101,8 @@ func main() {
             </div>
         </div>
     </section>
+
+    </main><!-- /main -->
 
     <!-- Footer -->
     <footer class="footer">
