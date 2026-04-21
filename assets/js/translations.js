@@ -140,10 +140,10 @@ const translations = {
             subtitle: "My technical expertise",
             categories: {
                 backend: "Backend Development",
-                frontend: "Frontend Development",
                 devops: "DevOps & Cloud",
-                ai: "AI & Machine Learning",
                 databases: "Databases",
+                frontend: "Frontend Development",
+                ai: "AI & Machine Learning",
                 other: "Other Technologies"
             }
         },
@@ -408,10 +408,10 @@ const translations = {
             subtitle: "Meine technische Expertise",
             categories: {
                 backend: "Backend-Entwicklung",
-                frontend: "Frontend-Entwicklung",
                 devops: "DevOps & Cloud",
-                ai: "KI & Machine Learning",
                 databases: "Datenbanken",
+                frontend: "Frontend-Entwicklung",
+                ai: "KI & Machine Learning",
                 other: "Weitere Technologien"
             }
         },
