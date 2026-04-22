@@ -20,7 +20,7 @@ const translations = {
             roles: [
                 'Software Engineer',
                 'Backend Developer',
-                'AI Researcher',
+                'AI Enthusiast',
                 'Problem Solver'
             ],
             description: "Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS. Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.",
@@ -158,13 +158,13 @@ const translations = {
                     link: "View Code"
                 },
                 {
-                    title: "BOOKS-AUTHORS",
-                    description: "Implemented REST and GraphQL APIs for book and author management using Golang, JWT for authentication, Zap for logging, and Prometheus for monitoring. Supports CRUD operations and advanced queries.",
+                    title: "Atlas - AI Travel Planner",
+                    description: "Built an AI-powered travel planning app with day-by-day itinerary generation, real-time budget tracking, group expense splitting, and AI outfit recommendations. Features 500+ destinations with seasonal filters and live weather data. Stack: React 18, TypeScript, Go, Gin.",
                     link: "View Code"
                 },
                 {
-                    title: "Smart Attendance System",
-                    description: "Built an intelligent attendance system using computer vision and machine learning. Uses OpenCV for face detection and recognition, with a Flask web interface for easy management.",
+                    title: "BOOKS-AUTHORS",
+                    description: "Implemented REST and GraphQL APIs for book and author management using Golang, JWT for authentication, Zap for logging, and Prometheus for monitoring. Supports CRUD operations and advanced queries.",
                     link: "View Code"
                 }
             ]
@@ -177,20 +177,20 @@ const translations = {
                 title: "Company and Academic Achievement",
                 list: [
                     {
+                        title: "TU Dortmund Start-up Weekend 2026",
+                        description: "Rank 3 (Bronze Badge)"
+                    },
+                    {
+                        title: "Cheese Ownership",
+                        description: "Q1 2025 - Shikho Technologies Bangladesh Limited"
+                    },
+                    {
                         title: "Academic Excellence",
                         description: "Last Semester GPA: 3.96/4.0 at Jagannath University"
                     },
                     {
                         title: "Microsoft MSLA",
                         description: "Beta Level Achievement"
-                    },
-                    {
-                        title: "JnU IEEE Student Branch",
-                        description: "Organizing Secretary"
-                    },
-                    {
-                        title: "Cheese Ownership",
-                        description: "Q1 2025 - Shikho Technologies Bangladesh Limited"
                     }
                 ]
             },
@@ -426,13 +426,13 @@ const translations = {
                     link: "Code ansehen"
                 },
                 {
-                    title: "BOOKS-AUTHORS",
-                    description: "Implementierung von REST- und GraphQL-APIs für Buch- und Autorenverwaltung mit Golang, JWT für Authentifizierung, Zap für Logging und Prometheus für Monitoring. Unterstützt CRUD-Operationen und erweiterte Abfragen.",
+                    title: "Atlas - KI-Reiseplaner",
+                    description: "Entwicklung einer KI-gestützten Reiseplanungsanwendung mit tagesgenauer Reiserouten-Generierung, Echtzeit-Budgetverfolgung, Gruppenausgabenteilung und KI-Outfit-Empfehlungen. Bietet 500+ Reiseziele mit Saisonfiltern und Live-Wetterdaten. Stack: React 18, TypeScript, Go, Gin.",
                     link: "Code ansehen"
                 },
                 {
-                    title: "Intelligentes Anwesenheitssystem",
-                    description: "Entwicklung eines intelligenten Anwesenheitssystems mit Computer Vision und maschinellem Lernen. Verwendet OpenCV zur Gesichtserkennung mit einer Flask-Weboberfläche für einfache Verwaltung.",
+                    title: "BOOKS-AUTHORS",
+                    description: "Implementierung von REST- und GraphQL-APIs für Buch- und Autorenverwaltung mit Golang, JWT für Authentifizierung, Zap für Logging und Prometheus für Monitoring. Unterstützt CRUD-Operationen und erweiterte Abfragen.",
                     link: "Code ansehen"
                 }
             ]
@@ -445,20 +445,20 @@ const translations = {
                 title: "Unternehmens- und akademische Erfolge",
                 list: [
                     {
+                        title: "TU Dortmund Start-up Weekend 2026",
+                        description: "Rang 3 (Bronze-Abzeichen)"
+                    },
+                    {
+                        title: "Cheese Ownership",
+                        description: "Q1 2025 - Shikho Technologies Bangladesh Limited"
+                    },
+                    {
                         title: "Akademische Exzellenz",
                         description: "Letztes Semester Durchschnitt: 3.96/4.0 an der Jagannath Universität"
                     },
                     {
                         title: "Microsoft MSLA",
                         description: "Beta Level Auszeichnung"
-                    },
-                    {
-                        title: "JnU IEEE Student Branch",
-                        description: "Organisationssekretär"
-                    },
-                    {
-                        title: "Cheese Ownership",
-                        description: "Q1 2025 - Shikho Technologies Bangladesh Limited"
                     }
                 ]
             },
