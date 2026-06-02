@@ -447,7 +447,7 @@
         setTimeout(() => {
             toast.classList.remove('toast--visible');
             setTimeout(() => toast.remove(), 300);
-        }, 2000);
+        }, 4000);
     }
 
     // ── Email Copy ────────────────────────────────────────────────────────────
