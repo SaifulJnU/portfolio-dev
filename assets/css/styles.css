@@ -1069,6 +1069,12 @@ body.light-mode .image-bg {
     margin-left: 0.25rem;
 }
 
+.about-tag .fi {
+    vertical-align: -0.1em;
+    border-radius: 2px;
+    margin-right: 0.15rem;
+}
+
 .stat-item {
     text-align: center;
     padding: 0.25rem 1rem;

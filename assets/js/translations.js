@@ -25,7 +25,8 @@ const translations = {
             ],
             description: "Software Engineer with 3+ years building scalable microservices in Go, Python, Kubernetes, and AWS. Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.",
             getInTouch: "Get In Touch",
-            downloadCV: "Download CV"
+            downloadCV: "Download CV",
+            cvContact: "Thanks for your interest! Please feel free to get in touch and I'll gladly share my CV with you."
         },
         // About Section
         about: {
@@ -293,7 +294,8 @@ const translations = {
             ],
             description: "Software Engineer mit 3+ Jahren Erfahrung im Aufbau skalierbarer Microservices mit Go, Python, Kubernetes und AWS. Derzeit MSc Data Science an der TU Dortmund, um Expertise in angewandter KI und datengetriebenen Systemen zu vertiefen.",
             getInTouch: "Kontaktieren",
-            downloadCV: "Lebenslauf herunterladen"
+            downloadCV: "Lebenslauf herunterladen",
+            cvContact: "Vielen Dank für Ihr Interesse! Kontaktieren Sie mich gerne – ich sende Ihnen meinen Lebenslauf sehr gerne zu."
         },
         // About Section
         about: {

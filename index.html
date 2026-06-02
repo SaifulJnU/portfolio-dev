@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +32,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Flag Icons (professional SVG country flags) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -77,8 +80,8 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="language-toggle" id="languageToggle">
-                <button class="lang-btn active" type="button" data-lang="en" aria-label="Switch to English">EN</button>
-                <button class="lang-btn" type="button" data-lang="de" aria-label="Zu Deutsch wechseln">DE</button>
+                <button class="lang-btn" type="button" data-lang="en" aria-label="Switch to English">EN</button>
+                <button class="lang-btn active" type="button" data-lang="de" aria-label="Zu Deutsch wechseln">DE</button>
             </div>
             <div class="theme-toggle" id="themeToggle">
                 <button class="theme-btn active" type="button" data-theme="dark" aria-label="Dark mode">
@@ -122,10 +125,10 @@
                         <i class="fas fa-envelope"></i>
                         Get In Touch
                     </a>
-                    <a href="assets/docs/Md_Saiful_Islam_Resume.pdf" class="btn btn-secondary" download="Md_Saiful_Islam_Resume_fs3.pdf">
+                    <button type="button" class="btn btn-secondary" id="cvButton">
                         <i class="fas fa-download"></i>
                         Download CV
-                    </a>
+                    </button>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/SaifulJnU" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
@@ -213,9 +216,9 @@ func main() {
                                 <i class="fas fa-language"></i> Languages
                             </div>
                             <div class="about-extra-tags">
-                                <span class="about-tag">🇬🇧 English <em>B2</em></span>
-                                <span class="about-tag">🇧🇩 Bangla <em>Native</em></span>
-                                <span class="about-tag">🇩🇪 German <em>A1</em></span>
+                                <span class="about-tag"><span class="fi fi-gb" aria-hidden="true"></span> English <em>B2</em></span>
+                                <span class="about-tag"><span class="fi fi-bd" aria-hidden="true"></span> Bangla <em>Native</em></span>
+                                <span class="about-tag"><span class="fi fi-de" aria-hidden="true"></span> German <em>A1</em></span>
                             </div>
                         </div>
                         <div class="about-extra-item">
@@ -223,9 +226,9 @@ func main() {
                                 <i class="fas fa-heart"></i> Hobbies
                             </div>
                             <div class="about-extra-tags">
-                                <span class="about-tag">🤝 Volunteering</span>
-                                <span class="about-tag">✈️ Travelling</span>
-                                <span class="about-tag">📚 Reading</span>
+                                <span class="about-tag"><i class="fas fa-handshake" aria-hidden="true"></i> Volunteering</span>
+                                <span class="about-tag"><i class="fas fa-plane" aria-hidden="true"></i> Travelling</span>
+                                <span class="about-tag"><i class="fas fa-book" aria-hidden="true"></i> Reading</span>
                             </div>
                         </div>
                     </div>

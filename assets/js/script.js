@@ -51,6 +51,7 @@
             if (typeof translations === 'undefined' || !translations[lang]) return;
             currentLang = lang;
             localStorage.setItem(STORAGE_KEYS.LANGUAGE, lang);
+            document.documentElement.lang = lang;
             const t = translations[lang];
 
             // Navigation
@@ -508,6 +509,15 @@
         qa('.lang-btn').forEach(btn =>
             btn.addEventListener('click', () => setLanguage(btn.dataset.lang))
         );
+
+        // CV button: no direct download — prompt visitors to get in touch
+        const cvButton = q('#cvButton');
+        if (cvButton) {
+            cvButton.addEventListener('click', () => {
+                const t = (typeof translations !== 'undefined') && translations[currentLang];
+                showToast((t && t.hero && t.hero.cvContact) || 'Please contact me to request my CV.');
+            });
+        }
 
         // Flip card: support click/touch in addition to CSS hover
         const flipCard = q('.flip-card');
