@@ -23,7 +23,7 @@ const translations = {
                 'AI Enthusiast',
                 'Problem Solver'
             ],
-            description: "Software Engineer with 3+ years building scalable microservices in Go, Kubernetes, and AWS. Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.",
+            description: "Software Engineer with 3+ years building scalable microservices in Go, Python, Kubernetes, and AWS. Currently pursuing MSc in Data Science at TU Dortmund to deepen expertise in applied AI and data-driven systems.",
             getInTouch: "Get In Touch",
             downloadCV: "Download CV"
         },
@@ -291,7 +291,7 @@ const translations = {
                 'KI-Forscher',
                 'Problemlöser'
             ],
-            description: "Software Engineer mit 3+ Jahren Erfahrung im Aufbau skalierbarer Microservices mit Go, Kubernetes und AWS. Derzeit MSc Data Science an der TU Dortmund, um Expertise in angewandter KI und datengetriebenen Systemen zu vertiefen.",
+            description: "Software Engineer mit 3+ Jahren Erfahrung im Aufbau skalierbarer Microservices mit Go, Python, Kubernetes und AWS. Derzeit MSc Data Science an der TU Dortmund, um Expertise in angewandter KI und datengetriebenen Systemen zu vertiefen.",
             getInTouch: "Kontaktieren",
             downloadCV: "Lebenslauf herunterladen"
         },

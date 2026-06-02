@@ -1982,6 +1982,12 @@ body.warm-mode .nav-menu {
 .icon-huggingface { color: #FFD21E !important; }
 .icon-tensorflow { color: #FF6F00 !important; }
 .icon-opencv { color: #5C3EE8 !important; }
+.icon-vectordb { color: #7C3AED !important; }
+.icon-rag { color: #10A37F !important; }
+.icon-mcp { color: #D97757 !important; }
+.icon-adk { color: #4285F4 !important; }
+.icon-loki { color: #F5A623 !important; }
+.icon-grafana { color: #F46800 !important; }
 
 .icon-mongodb { color: #47A248 !important; }
 .icon-postgresql { color: #336791 !important; }
@@ -2017,6 +2023,12 @@ body.warm-mode .nav-menu {
 .skill-item:hover .icon-huggingface,
 .skill-item:hover .icon-tensorflow,
 .skill-item:hover .icon-opencv,
+.skill-item:hover .icon-vectordb,
+.skill-item:hover .icon-rag,
+.skill-item:hover .icon-mcp,
+.skill-item:hover .icon-adk,
+.skill-item:hover .icon-loki,
+.skill-item:hover .icon-grafana,
 .skill-item:hover .icon-mongodb,
 .skill-item:hover .icon-postgresql,
 .skill-item:hover .icon-arangodb,
