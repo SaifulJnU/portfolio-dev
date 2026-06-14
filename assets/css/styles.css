@@ -793,6 +793,14 @@ body.light-mode .language-toggle {
     border-color: var(--primary-light);
 }
 
+/* Brand colors for each social icon */
+.social-links a .fa-github { color: #f0f6fc; }
+.social-links a .fa-gitlab { color: #fc6d26; }
+.social-links a .fa-linkedin { color: #0a66c2; }
+.social-links a .fa-stack-overflow { color: #f48024; }
+.social-links a .fa-laptop-code { color: #1789fc; }
+.social-links a .fa-google-scholar { color: #4285f4; }
+
 .hero-image {
     display: flex;
     justify-content: center;

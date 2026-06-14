@@ -18,7 +18,7 @@ const translations = {
             greeting: "Hi, I'm",
             name: "Md Saiful Islam",
             roles: [
-                'Software Engineer',
+                'AI/Software Engineer',
                 'Backend Developer',
                 'AI Enthusiast',
                 'Problem Solver'
@@ -62,7 +62,7 @@ const translations = {
             subtitle: "My professional journey in software development",
             jobs: {
                 shikho: {
-                    title: "Software Engineer",
+                    title: "AI/Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
                     date: "July 2023 - Present",
                     location: "Dhaka, Hybrid",
@@ -287,7 +287,7 @@ const translations = {
             greeting: "Hallo, ich bin",
             name: "Md Saiful Islam",
             roles: [
-                'Software Engineer',
+                'AI/Software Engineer',
                 'Backend-Entwickler',
                 'KI-Forscher',
                 'Problemlöser'
@@ -331,7 +331,7 @@ const translations = {
             subtitle: "Meine berufliche Entwicklung in der Softwareentwicklung",
             jobs: {
                 shikho: {
-                    title: "Software Engineer",
+                    title: "AI/Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
                     date: "Juli 2023 - Heute",
                     location: "Dhaka, Hybrid",
