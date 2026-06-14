@@ -800,6 +800,8 @@ body.light-mode .language-toggle {
 .social-links a .fa-stack-overflow { color: #f48024; }
 .social-links a .fa-laptop-code { color: #1789fc; }
 .social-links a .fa-google-scholar { color: #4285f4; }
+body.light-mode .social-links a .fa-github,
+body.warm-mode .social-links a .fa-github { color: #181717; }
 
 .hero-image {
     display: flex;
