@@ -52,7 +52,7 @@ const translations = {
                     university: "Jagannath University",
                     location: "Dhaka, Bangladesh",
                     date: "Jan 2018 - Jan 2023",
-                    gpa: "CGPA: 3.40/4.0 (2,00/5,00) | Last Sem GPA: 3.96/4.0 (1,07/5,00)"
+                    gpa: "CGPA: 2,00/5,00 | Last Sem GPA: 1,07/5,00 (German scale)"
                 }
             }
         },
@@ -203,7 +203,7 @@ const translations = {
                     },
                     {
                         title: "Academic Excellence",
-                        description: "Last Semester GPA: 3.96/4.0 (1,07/5,00) at Jagannath University"
+                        description: "Last Semester GPA: 1,07/5,00 (German scale) at Jagannath University"
                     },
                     {
                         title: "Microsoft MSLA",
@@ -337,7 +337,7 @@ const translations = {
                     university: "Jagannath Universität",
                     location: "Dhaka, Bangladesch",
                     date: "Jan 2018 - Jan 2023",
-                    gpa: "Durchschnitt: 3.40/4.0 (2,00/5,00) | Letztes Semester: 3.96/4.0 (1,07/5,00)"
+                    gpa: "Durchschnitt: 2,00/5,00 | Letztes Semester: 1,07/5,00 (deutsche Notenskala)"
                 }
             }
         },
@@ -488,7 +488,7 @@ const translations = {
                     },
                     {
                         title: "Akademische Exzellenz",
-                        description: "Letztes Semester Durchschnitt: 3.96/4.0 (1,07/5,00) an der Jagannath Universität"
+                        description: "Letztes Semester Durchschnitt: 1,07/5,00 (deutsche Notenskala) an der Jagannath Universität"
                     },
                     {
                         title: "Microsoft MSLA",
