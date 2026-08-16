@@ -45,7 +45,7 @@ const translations = {
                     degree: "MSc in Data Science",
                     university: "TU Dortmund University",
                     location: "Dortmund, Germany",
-                    date: "April 2026 – Present"
+                    date: "April 2026 to Present"
                 },
                 bsc: {
                     degree: "BSc in Computer Science and Engineering",
@@ -153,6 +153,21 @@ const translations = {
             title: "Featured Projects",
             subtitle: "Some of my notable work",
             list: [
+                {
+                    title: "Skriptra",
+                    description: "Built a self-hostable, provider-agnostic exam intelligence platform. Users upload past papers, solutions, and lecture notes, then browse questions by chapter and year, find similar questions across years, and ask natural-language questions answered with page-level citations. Classifies questions against course taxonomies at ingestion, routes aggregation queries to SQL and retrieval queries to hybrid vector search, and handles digital PDFs, DOCX, photos, and scans.",
+                    link: "View Code"
+                },
+                {
+                    title: "Agentic Dev Assistant",
+                    description: "Built an autonomous engineering pipeline that turns a GitHub issue into a draft pull request with tests, using a bounded planner, coder, and reviewer multi-agent loop. Supports swappable LLM backends, and cuts typical run costs by 40 to 60 percent through prompt caching, model tiering, input clipping, and concurrent calls. Safety rails include draft-only PRs, hard test gates, and sandboxed workspaces. Ships as an HTTP service and an MCP server.",
+                    link: "View Code"
+                },
+                {
+                    title: "Cosmo3D",
+                    description: "Built an interactive demo of amortized cosmological inference. A neural posterior estimator trained offline takes one noisy matter power spectrum and returns the full joint posterior over four cosmological parameters in milliseconds, rendered as a rotating 3D point cloud. Recovers known parameter degeneracies without explicit training, and is validated with simulation-based calibration.",
+                    link: "View Code"
+                },
                 {
                     title: "ORDER-NEST",
                     description: "Developed an order management system with low-level design and user authentication using Golang and GORM. Features include order processing, inventory management, and role-based access control.",
@@ -295,7 +310,7 @@ const translations = {
             description: "Software Engineer mit 3+ Jahren Erfahrung im Aufbau skalierbarer Microservices mit Go, Python, Kubernetes und AWS. Derzeit MSc Data Science an der TU Dortmund, um Expertise in angewandter KI und datengetriebenen Systemen zu vertiefen.",
             getInTouch: "Kontaktieren",
             downloadCV: "Lebenslauf herunterladen",
-            cvContact: "Vielen Dank für Ihr Interesse! Kontaktieren Sie mich gerne – ich sende Ihnen meinen Lebenslauf sehr gerne zu."
+            cvContact: "Vielen Dank für Ihr Interesse! Kontaktieren Sie mich gerne, ich sende Ihnen meinen Lebenslauf sehr gerne zu."
         },
         // About Section
         about: {
@@ -314,7 +329,7 @@ const translations = {
                     degree: "MSc in Data Science",
                     university: "TU Dortmund",
                     location: "Dortmund, Deutschland",
-                    date: "April 2026 – Heute"
+                    date: "April 2026 bis heute"
                 },
                 bsc: {
                     degree: "BSc in Informatik und Ingenieurwesen",
@@ -422,6 +437,21 @@ const translations = {
             title: "Ausgewählte Projekte",
             subtitle: "Einige meiner bemerkenswerten Arbeiten",
             list: [
+                {
+                    title: "Skriptra",
+                    description: "Entwicklung einer selbst hostbaren, anbieterunabhängigen Plattform für Prüfungsintelligenz. Nutzer laden Altklausuren, Lösungen und Vorlesungsskripte hoch, durchsuchen Fragen nach Kapitel und Jahr, finden ähnliche Fragen über Jahrgänge hinweg und stellen natürlichsprachliche Fragen, die mit seitengenauen Quellenangaben beantwortet werden. Fragen werden beim Import gegen Kurstaxonomien klassifiziert, Aggregationsabfragen nach SQL und Retrieval-Abfragen an eine hybride Vektorsuche geleitet. Unterstützt digitale PDFs, DOCX, Fotos und Scans.",
+                    link: "Code ansehen"
+                },
+                {
+                    title: "Agentic Dev Assistant",
+                    description: "Entwicklung einer autonomen Engineering-Pipeline, die aus einem GitHub-Issue einen Pull-Request-Entwurf samt Tests erzeugt, über eine begrenzte Multi-Agenten-Schleife aus Planer, Coder und Reviewer. Unterstützt austauschbare LLM-Backends und senkt die typischen Laufkosten um 40 bis 60 Prozent durch Prompt-Caching, Modellstufung, Eingabekürzung und parallele Aufrufe. Als Sicherheitsnetz dienen reine Entwurfs-PRs, harte Test-Gates und isolierte Arbeitsbereiche. Verfügbar als HTTP-Dienst und als MCP-Server.",
+                    link: "Code ansehen"
+                },
+                {
+                    title: "Cosmo3D",
+                    description: "Entwicklung einer interaktiven Demo für amortisierte kosmologische Inferenz. Ein offline trainierter neuronaler Posterior-Schätzer nimmt ein verrauschtes Materie-Leistungsspektrum entgegen und liefert in Millisekunden die vollständige gemeinsame Posteriorverteilung über vier kosmologische Parameter, dargestellt als rotierende 3D-Punktwolke. Bekannte Parameter-Entartungen werden ohne explizites Training reproduziert und mit simulationsbasierter Kalibrierung validiert.",
+                    link: "Code ansehen"
+                },
                 {
                     title: "ORDER-NEST",
                     description: "Entwicklung eines Auftragsverwaltungssystems mit Low-Level-Design und Benutzerauthentifizierung mit Golang und GORM. Funktionen umfassen Auftragsverarbeitung, Bestandsverwaltung und rollenbasierte Zugriffskontrolle.",

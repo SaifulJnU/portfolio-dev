@@ -296,15 +296,16 @@
             const size     = Math.random() * 5 + 2;
             const duration = Math.random() * 20 + 10;
             const delay    = Math.random() * 5;
-            const r        = (99  + Math.random() * 100) | 0;
-            const g        = (102 + Math.random() * 100) | 0;
+            const r        = (240 + Math.random() * 16)  | 0;
+            const g        = (140 + Math.random() * 75)  | 0;
+            const b        = (20  + Math.random() * 45)  | 0;
             const particle = document.createElement('div');
             particle.className = 'particle';
             particle.setAttribute('aria-hidden', 'true');
             particle.style.cssText =
                 `width:${size}px;height:${size}px;` +
                 `left:${Math.random() * 100}%;top:${Math.random() * 100}%;` +
-                `background:rgba(${r},${g},241,0.3);` +
+                `background:rgba(${r},${g},${b},0.35);` +
                 `animation:float ${duration}s ${delay}s infinite ease-in-out`;
             fragment.appendChild(particle);
         }
@@ -510,7 +511,7 @@
             btn.addEventListener('click', () => setLanguage(btn.dataset.lang))
         );
 
-        // CV button: no direct download — prompt visitors to get in touch
+        // CV button: no direct download, prompt visitors to get in touch
         const cvButton = q('#cvButton');
         if (cvButton) {
             cvButton.addEventListener('click', () => {
