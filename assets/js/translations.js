@@ -67,9 +67,9 @@ const translations = {
                     date: "July 2023 - August 2026",
                     location: "Dhaka, Hybrid",
                     responsibilities: [
-                        "Working in a team of six engineers to build a complete platform, designing and implementing microservices using Go, K8s, and AWS.",
+                        "Worked in a team of six engineers to build a complete platform, designing and implementing microservices using Go, K8s, and AWS.",
                         "Built AI-powered learning features using LangGraph, LangChain, and RAG over a vector database, delivering context-aware answers grounded in Shikho's own course content.",
-                        "Leading scalable analytics services generating 10K+ reports daily, improving student performance tracking speed using Go concurrency, NATS, MongoStream, and Redis.",
+                        "Led scalable analytics services generating 10K+ reports daily, improving student performance tracking speed using Go concurrency, NATS, MongoStream, and Redis.",
                         "Engineered services for Programs and Live Exam modules using Go routines, reducing latency by 40% and supporting high-concurrency workflows for 3M+ users.",
                         "Implemented event-driven integrations with the in-house CRM system, streamlining workflows for 200+ agents and contributing to 30% subscriber growth using Machinery (asynchronous task queue).",
                         "Built a user-defined MCQ feature adopted by over 80% of enrolled users, enabling personalized assessments and becoming one of the platform's most popular features.",
