@@ -64,10 +64,11 @@ const translations = {
                 shikho: {
                     title: "AI/Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
-                    date: "July 2023 - Present",
+                    date: "July 2023 - August 2026",
                     location: "Dhaka, Hybrid",
                     responsibilities: [
                         "Working in a team of six engineers to build a complete platform, designing and implementing microservices using Go, K8s, and AWS.",
+                        "Built AI-powered learning features using LangGraph, LangChain, and RAG over a vector database, delivering context-aware answers grounded in Shikho's own course content.",
                         "Leading scalable analytics services generating 10K+ reports daily, improving student performance tracking speed using Go concurrency, NATS, MongoStream, and Redis.",
                         "Engineered services for Programs and Live Exam modules using Go routines, reducing latency by 40% and supporting high-concurrency workflows for 3M+ users.",
                         "Implemented event-driven integrations with the in-house CRM system, streamlining workflows for 200+ agents and contributing to 30% subscriber growth using Machinery (asynchronous task queue).",
@@ -96,7 +97,7 @@ const translations = {
                 smartinternz: {
                     title: "Student Partner",
                     company: "SmartInternz",
-                    date: "June 2021 - August 2021",
+                    date: "May 2021 - July 2021",
                     location: "Dhaka, Bangladesh",
                     responsibilities: [
                         "Developed a Smart Attendance System using Python, OpenCV, and Flask, enabling automated face-detection-based attendance tracking, and applied computer vision techniques for real-time detection and processing, improving accuracy over manual systems."
@@ -348,10 +349,11 @@ const translations = {
                 shikho: {
                     title: "AI/Software Engineer",
                     company: "Shikho Technologies Bangladesh Limited",
-                    date: "Juli 2023 - Heute",
+                    date: "Juli 2023 - August 2026",
                     location: "Dhaka, Hybrid",
                     responsibilities: [
                         "In einem Team von sechs Ingenieuren an einer kompletten Plattform gearbeitet, Microservices mit Go, K8s und AWS entworfen und implementiert.",
+                        "KI-gestützte Lernfunktionen mit LangGraph, LangChain und RAG über eine Vektordatenbank entwickelt, die kontextbezogene Antworten auf Basis der Kursinhalte von Shikho liefern.",
                         "Skalierbare Analytics-Services geleitet, die täglich 10K+ Berichte generieren, und die Geschwindigkeit der Schülerleistungsverfolgung mit Go Concurrency, NATS, MongoStream und Redis verbessert.",
                         "Services für Programme und Live-Prüfungsmodule mit Go-Routinen entwickelt, Latenz um 40% reduziert und Hochlast-Workflows für 3M+ Nutzer unterstützt.",
                         "Event-gesteuerte Integrationen mit dem internen CRM-System implementiert, Workflows für 200+ Agenten optimiert und 30% Abonnentenwachstum mit Machinery beigetragen.",
@@ -380,7 +382,7 @@ const translations = {
                 smartinternz: {
                     title: "Studentischer Partner",
                     company: "SmartInternz",
-                    date: "Juni 2021 - August 2021",
+                    date: "Mai 2021 - Juli 2021",
                     location: "Dhaka, Bangladesch",
                     responsibilities: [
                         "Ein Smart Attendance System mit Python, OpenCV und Flask entwickelt, automatisierte gesichtserkennungsbasierte Anwesenheitsverfolgung ermöglicht und Computer-Vision-Techniken für Echtzeiterkennung angewandt."
