@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" fill="none" aria-hidden="true">
+  <!-- Books-Authors: the same records served over REST and GraphQL, behind JWT,
+       with request metrics scraped out the side. -->
+  <defs>
+    <radialGradient id="bk-amb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bk-amb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bk-chrome" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#151c1a" stop-opacity=".93"/>
+      <stop offset="100%" stop-color="#191510" stop-opacity=".93"/>
+    </linearGradient>
+    <linearGradient id="bk-spark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="bk-lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="-4" dy="14" stdDeviation="14" flood-color="#040705" flood-opacity=".5"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="180" cy="70" rx="230" ry="170" fill="url(#bk-amb-a)"/>
+  <ellipse cx="560" cy="370" rx="230" ry="170" fill="url(#bk-amb-b)"/>
+
+  <!-- query editor -->
+  <g filter="url(#bk-lift)">
+    <rect x="46" y="52" width="304" height="248" rx="14" fill="url(#bk-chrome)" stroke="#f4f1ec" stroke-opacity=".14" stroke-width="1.5"/>
+  </g>
+  <g>
+    <path d="M46 88h304" stroke="#f4f1ec" stroke-opacity=".12" stroke-width="1.5"/>
+    <rect x="66" y="64" width="62" height="20" rx="10" fill="#f97316" fill-opacity=".8"/>
+    <rect x="78" y="70" width="38" height="7" rx="3.5" fill="#160c02" fill-opacity=".55"/>
+    <rect x="140" y="64" width="62" height="20" rx="10" fill="#f4f1ec" fill-opacity=".07" stroke="#f4f1ec" stroke-opacity=".16"/>
+    <rect x="152" y="70" width="38" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".25"/>
+
+    <!-- a graph query, braces and all -->
+    <g fill="#f4f1ec">
+      <rect x="70" y="112" width="46" height="8" rx="4" fill-opacity=".34"/>
+      <rect x="124" y="112" width="10" height="8" rx="3" fill="#fdba74" fill-opacity=".8"/>
+      <rect x="88" y="138" width="72" height="7" rx="3.5" fill="#5eead4" fill-opacity=".65"/>
+      <rect x="106" y="162" width="56" height="7" rx="3.5" fill-opacity=".26"/>
+      <rect x="106" y="184" width="88" height="7" rx="3.5" fill-opacity=".26"/>
+      <rect x="106" y="206" width="44" height="7" rx="3.5" fill="#5eead4" fill-opacity=".5"/>
+      <rect x="124" y="228" width="70" height="7" rx="3.5" fill-opacity=".2"/>
+      <rect x="124" y="250" width="52" height="7" rx="3.5" fill-opacity=".2"/>
+      <rect x="88" y="272" width="10" height="8" rx="3" fill="#fdba74" fill-opacity=".8"/>
+    </g>
+    <path d="M70 132v152" stroke="#f4f1ec" stroke-opacity=".08" stroke-width="1.2"/>
+  </g>
+
+  <!-- signed request -->
+  <g>
+    <rect x="368" y="60" width="150" height="34" rx="17" fill="#0f1a18" fill-opacity=".92" stroke="#2dd4bf" stroke-opacity=".45"/>
+    <path d="M390 77v-6a6 6 0 0 1 12 0v6" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+    <rect x="386" y="77" width="20" height="14" rx="4" fill="#2dd4bf" fill-opacity=".55"/>
+    <rect x="416" y="73" width="82" height="8" rx="4" fill="#f4f1ec" fill-opacity=".25"/>
+  </g>
+
+  <!-- the records that come back -->
+  <g filter="url(#bk-lift)">
+    <rect x="368" y="116" width="252" height="184" rx="14" fill="url(#bk-chrome)" stroke="#2dd4bf" stroke-opacity=".32" stroke-width="1.5"/>
+  </g>
+  <g>
+    <g>
+      <rect x="392" y="140" width="30" height="40" rx="4" fill="#f97316" fill-opacity=".7"/>
+      <path d="M392 152h30" stroke="#160c02" stroke-opacity=".4" stroke-width="2"/>
+      <rect x="434" y="144" width="120" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+      <rect x="434" y="160" width="86" height="6" rx="3" fill="#5eead4" fill-opacity=".5"/>
+      <rect x="434" y="174" width="64" height="6" rx="3" fill="#f4f1ec" fill-opacity=".14"/>
+    </g>
+    <path d="M392 200h204" stroke="#f4f1ec" stroke-opacity=".08" stroke-width="1.2"/>
+    <g>
+      <rect x="392" y="212" width="30" height="40" rx="4" fill="#2dd4bf" fill-opacity=".6"/>
+      <path d="M392 224h30" stroke="#04211e" stroke-opacity=".4" stroke-width="2"/>
+      <rect x="434" y="216" width="96" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+      <rect x="434" y="232" width="110" height="6" rx="3" fill="#5eead4" fill-opacity=".5"/>
+      <rect x="434" y="246" width="52" height="6" rx="3" fill="#f4f1ec" fill-opacity=".14"/>
+    </g>
+    <rect x="392" y="272" width="72" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".16"/>
+  </g>
+
+  <!-- what the metrics endpoint has been reporting -->
+  <g filter="url(#bk-lift)">
+    <rect x="128" y="316" width="384" height="86" rx="12" fill="url(#bk-chrome)" stroke="#f97316" stroke-opacity=".32" stroke-width="1.5"/>
+  </g>
+  <g>
+    <rect x="148" y="332" width="58" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+    <path d="M148 386h344" stroke="#f4f1ec" stroke-opacity=".12" stroke-width="1.2"/>
+    <path d="M148 372c22 0 26-16 44-16s22 12 40 12 26-22 44-22 24 18 42 18 26-26 44-26 24 20 42 20 22-10 38-10"
+          stroke="url(#bk-spark)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#5eead4" fill-opacity=".8">
+      <circle cx="232" cy="368" r="3"/>
+      <circle cx="318" cy="374" r="3"/>
+      <circle cx="404" cy="358" r="3"/>
+    </g>
+  </g>
+</svg>

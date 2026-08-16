@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" fill="none" aria-hidden="true">
+  <!-- Agentic Dev Assistant: an issue enters, planner/coder/reviewer loop over
+       it, a draft pull request with passing test gates comes out. -->
+  <defs>
+    <radialGradient id="ag-amb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ag-amb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ag-chrome" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#141d1b" stop-opacity=".93"/>
+      <stop offset="100%" stop-color="#1a1611" stop-opacity=".93"/>
+    </linearGradient>
+    <filter id="ag-lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="-4" dy="14" stdDeviation="14" flood-color="#040705" flood-opacity=".5"/>
+    </filter>
+    <filter id="ag-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="300" cy="70" rx="250" ry="170" fill="url(#ag-amb-a)"/>
+  <ellipse cx="580" cy="380" rx="220" ry="170" fill="url(#ag-amb-b)"/>
+
+  <!-- the issue that starts the run -->
+  <g filter="url(#ag-lift)">
+    <rect x="24" y="150" width="150" height="112" rx="12" fill="url(#ag-chrome)" stroke="#f4f1ec" stroke-opacity=".16" stroke-width="1.5"/>
+  </g>
+  <g>
+    <circle cx="46" cy="174" r="7" stroke="#5eead4" stroke-width="2.5"/>
+    <rect x="62" y="170" width="46" height="8" rx="4" fill="#5eead4" fill-opacity=".75"/>
+    <g fill="#f4f1ec" fill-opacity=".2">
+      <rect x="40" y="198" width="118" height="7" rx="3.5"/>
+      <rect x="40" y="216" width="96" height="7" rx="3.5"/>
+      <rect x="40" y="234" width="72" height="7" rx="3.5"/>
+    </g>
+  </g>
+
+  <!-- planner / coder / reviewer, a bounded loop -->
+  <g>
+    <path d="M174 206h44" stroke="#5eead4" stroke-opacity=".65" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M212 200 220 206 212 212Z" fill="#5eead4" fill-opacity=".8"/>
+
+    <g filter="url(#ag-lift)">
+      <rect x="222" y="60" width="150" height="60" rx="14" fill="url(#ag-chrome)" stroke="#fdba74" stroke-opacity=".45" stroke-width="1.5"/>
+      <rect x="222" y="176" width="150" height="60" rx="14" fill="url(#ag-chrome)" stroke="#fdba74" stroke-opacity=".45" stroke-width="1.5"/>
+      <rect x="222" y="292" width="150" height="60" rx="14" fill="url(#ag-chrome)" stroke="#fdba74" stroke-opacity=".45" stroke-width="1.5"/>
+    </g>
+    <g>
+      <circle cx="250" cy="90" r="11" fill="#f97316" fill-opacity=".85"/>
+      <circle cx="250" cy="206" r="11" fill="#f97316" fill-opacity=".85"/>
+      <circle cx="250" cy="322" r="11" fill="#2dd4bf" fill-opacity=".85"/>
+      <g fill="#f4f1ec" fill-opacity=".34">
+        <rect x="272" y="80" width="62" height="8" rx="4"/>
+        <rect x="272" y="196" width="52" height="8" rx="4"/>
+        <rect x="272" y="312" width="70" height="8" rx="4"/>
+      </g>
+      <g fill="#f4f1ec" fill-opacity=".15">
+        <rect x="272" y="96" width="80" height="6" rx="3"/>
+        <rect x="272" y="212" width="88" height="6" rx="3"/>
+        <rect x="272" y="328" width="66" height="6" rx="3"/>
+      </g>
+    </g>
+
+    <!-- flow down, and the review loop back up -->
+    <g stroke="#fdba74" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round">
+      <path d="M297 120v48"/>
+      <path d="M297 236v48"/>
+    </g>
+    <g fill="#fdba74" fill-opacity=".75">
+      <path d="M291 162 297 170 303 162Z"/>
+      <path d="M291 278 297 286 303 278Z"/>
+    </g>
+    <path d="M222 322c-42 0-42-232 0-232" stroke="#2dd4bf" stroke-opacity=".5" stroke-width="2.5" stroke-dasharray="7 8"/>
+    <path d="M216 96 224 90 216 84Z" fill="#2dd4bf" fill-opacity=".7"/>
+  </g>
+
+  <!-- the draft pull request it opens -->
+  <g filter="url(#ag-lift)">
+    <rect x="416" y="96" width="216" height="228" rx="14" fill="url(#ag-chrome)" stroke="#2dd4bf" stroke-opacity=".35" stroke-width="1.5"/>
+  </g>
+  <g>
+    <path d="M416 134h216" stroke="#f4f1ec" stroke-opacity=".12" stroke-width="1.5"/>
+    <rect x="436" y="110" width="54" height="16" rx="8" fill="#f4f1ec" fill-opacity=".12" stroke="#f4f1ec" stroke-opacity=".22"/>
+    <rect x="502" y="113" width="76" height="9" rx="4.5" fill="#f4f1ec" fill-opacity=".28"/>
+
+    <!-- diff -->
+    <g>
+      <rect x="436" y="152" width="12" height="7" rx="2" fill="#f87171" fill-opacity=".7"/>
+      <rect x="456" y="152" width="120" height="7" rx="3.5" fill="#f87171" fill-opacity=".28"/>
+      <rect x="436" y="170" width="12" height="7" rx="2" fill="#4ade80" fill-opacity=".75"/>
+      <rect x="456" y="170" width="146" height="7" rx="3.5" fill="#4ade80" fill-opacity=".3"/>
+      <rect x="436" y="188" width="12" height="7" rx="2" fill="#4ade80" fill-opacity=".75"/>
+      <rect x="456" y="188" width="104" height="7" rx="3.5" fill="#4ade80" fill-opacity=".3"/>
+      <rect x="436" y="206" width="12" height="7" rx="2" fill="#4ade80" fill-opacity=".75"/>
+      <rect x="456" y="206" width="132" height="7" rx="3.5" fill="#4ade80" fill-opacity=".3"/>
+    </g>
+
+    <!-- the gates that must pass before it ships -->
+    <path d="M436 236h176" stroke="#f4f1ec" stroke-opacity=".1" stroke-width="1.5"/>
+    <g>
+      <circle cx="446" cy="260" r="9" fill="#2dd4bf" fill-opacity=".2" stroke="#2dd4bf" stroke-opacity=".8" stroke-width="1.5"/>
+      <path d="M442 260 445 263.5 450.5 256.5" stroke="#5eead4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="464" y="256" width="104" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".22"/>
+      <circle cx="446" cy="292" r="9" fill="#2dd4bf" fill-opacity=".2" stroke="#2dd4bf" stroke-opacity=".8" stroke-width="1.5"/>
+      <path d="M442 292 445 295.5 450.5 288.5" stroke="#5eead4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="464" y="288" width="82" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".22"/>
+    </g>
+  </g>
+  <ellipse cx="524" cy="210" rx="120" ry="130" fill="#2dd4bf" fill-opacity=".07" filter="url(#ag-glow)"/>
+</svg>

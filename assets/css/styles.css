@@ -2124,6 +2124,77 @@ body.warm-mode .nav-menu {
     border-color: var(--primary-light);
 }
 
+/* Each card carries a drawing of its own project, scrimmed for readability */
+.project-card[data-art] {
+    position: relative;
+    overflow: hidden;
+    --card-art-opacity: 0.7;
+    --card-art-opacity-hover: 0.88;
+    --card-scrim: rgba(12, 13, 11, 0.93);
+    --card-scrim-mid: rgba(12, 13, 11, 0.74);
+    --card-scrim-far: rgba(12, 13, 11, 0.4);
+}
+
+.project-card[data-art]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--card-art);
+    background-repeat: no-repeat;
+    background-position: 72% center;
+    background-size: cover;
+    opacity: var(--card-art-opacity);
+    transform-origin: 80% 50%;
+    transition: opacity var(--transition-normal), transform var(--transition-slow);
+    pointer-events: none;
+}
+
+.project-card[data-art]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(100deg, var(--card-scrim) 8%, var(--card-scrim-mid) 52%, var(--card-scrim-far) 100%),
+        linear-gradient(to top, var(--card-scrim) 0%, transparent 45%);
+    pointer-events: none;
+}
+
+.project-card[data-art]:hover::before {
+    opacity: var(--card-art-opacity-hover);
+    transform: scale(1.05);
+}
+
+.project-card[data-art] > * {
+    position: relative;
+    z-index: 1;
+}
+
+body.light-mode .project-card[data-art],
+body.warm-mode .project-card[data-art] {
+    --card-art-opacity: 0.5;
+    --card-art-opacity-hover: 0.68;
+}
+
+body.light-mode .project-card[data-art] {
+    --card-scrim: rgba(255, 255, 255, 0.94);
+    --card-scrim-mid: rgba(255, 255, 255, 0.78);
+    --card-scrim-far: rgba(255, 255, 255, 0.44);
+}
+
+body.warm-mode .project-card[data-art] {
+    --card-scrim: rgba(255, 251, 245, 0.95);
+    --card-scrim-mid: rgba(255, 251, 245, 0.8);
+    --card-scrim-far: rgba(255, 251, 245, 0.46);
+}
+
+.project-card[data-art="skriptra"]   { --card-art: url("../images/projects/skriptra.svg"); }
+.project-card[data-art="agentic"]    { --card-art: url("../images/projects/agentic-dev-assistant.svg"); }
+.project-card[data-art="cosmo3d"]    { --card-art: url("../images/projects/cosmo3d.svg"); }
+.project-card[data-art="order-nest"] { --card-art: url("../images/projects/order-nest.svg"); }
+.project-card[data-art="atlas"]      { --card-art: url("../images/projects/atlas.svg"); }
+.project-card[data-art="books"]      { --card-art: url("../images/projects/books-authors.svg"); }
+
+
 .project-header {
     display: flex;
     align-items: center;
@@ -3080,6 +3151,7 @@ body {
         scroll-behavior: auto !important;
     }
     .particle { display: none !important; }
+    .project-card[data-art]:hover::before { transform: none !important; }
     .cursor { animation: none !important; }
     .gradient-bg { animation: none !important; }
 }

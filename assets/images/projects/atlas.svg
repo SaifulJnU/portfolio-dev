@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" fill="none" aria-hidden="true">
+  <!-- Atlas: a route across a map, the day-by-day itinerary beside it, and the
+       budget split that follows the trip. -->
+  <defs>
+    <radialGradient id="at-amb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="at-amb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="at-chrome" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#10201d" stop-opacity=".93"/>
+      <stop offset="100%" stop-color="#181510" stop-opacity=".93"/>
+    </linearGradient>
+    <linearGradient id="at-route" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="at-lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="-4" dy="14" stdDeviation="14" flood-color="#040705" flood-opacity=".5"/>
+    </filter>
+    <filter id="at-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="240" cy="90" rx="240" ry="180" fill="url(#at-amb-a)"/>
+  <ellipse cx="560" cy="360" rx="220" ry="170" fill="url(#at-amb-b)"/>
+
+  <!-- the map -->
+  <g filter="url(#at-lift)">
+    <rect x="40" y="42" width="420" height="300" rx="16" fill="url(#at-chrome)" stroke="#2dd4bf" stroke-opacity=".3" stroke-width="1.5"/>
+  </g>
+  <g stroke="#f4f1ec" stroke-opacity=".07" stroke-width="1.2">
+    <path d="M40 102h420M40 162h420M40 222h420M40 282h420M110 42v300M180 42v300M250 42v300M320 42v300M390 42v300"/>
+  </g>
+  <!-- coastline and water, suggested not drawn literally -->
+  <g>
+    <path d="M40 250c56-8 78-46 132-40 46 5 62 40 108 30 40-9 48-44 92-40 30 3 48 22 88 18v126H40Z"
+          fill="#2dd4bf" fill-opacity=".07" stroke="#2dd4bf" stroke-opacity=".22" stroke-width="1.5"/>
+    <path d="M78 84c34 6 44 34 82 30 30-3 40-28 72-24 26 3 34 22 60 20" stroke="#f4f1ec" stroke-opacity=".1" stroke-width="1.5"/>
+  </g>
+
+  <!-- the planned route -->
+  <path d="M96 268c40-44 44-76 96-92 54-16 78 22 122-8 34-23 44-62 84-70"
+        stroke="url(#at-route)" stroke-opacity=".35" stroke-width="14" stroke-linecap="round" filter="url(#at-soft)"/>
+  <path d="M96 268c40-44 44-76 96-92 54-16 78 22 122-8 34-23 44-62 84-70"
+        stroke="url(#at-route)" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 11"/>
+
+  <!-- stops -->
+  <g>
+    <g fill="#2dd4bf">
+      <path d="M96 250c-11 0-19 9-19 19 0 14 19 30 19 30s19-16 19-30c0-10-8-19-19-19Z" fill-opacity=".9"/>
+      <circle cx="96" cy="269" r="6.5" fill="#0f1a18"/>
+    </g>
+    <g fill="#fdba74">
+      <path d="M192 158c-9 0-16 7-16 16 0 12 16 25 16 25s16-13 16-25c0-9-7-16-16-16Z" fill-opacity=".85"/>
+      <circle cx="192" cy="174" r="5.5" fill="#160c02"/>
+    </g>
+    <g fill="#fdba74">
+      <path d="M314 168c-9 0-16 7-16 16 0 12 16 25 16 25s16-13 16-25c0-9-7-16-16-16Z" fill-opacity=".85"/>
+      <circle cx="314" cy="184" r="5.5" fill="#160c02"/>
+    </g>
+    <g fill="#f97316">
+      <path d="M398 98c-11 0-19 8-19 19 0 14 19 30 19 30s19-16 19-30c0-11-8-19-19-19Z"/>
+      <circle cx="398" cy="117" r="6.5" fill="#160c02"/>
+    </g>
+  </g>
+
+  <!-- weather on the day you arrive -->
+  <g>
+    <rect x="322" y="60" width="116" height="34" rx="17" fill="#0f1a18" fill-opacity=".9" stroke="#f4f1ec" stroke-opacity=".16"/>
+    <circle cx="344" cy="77" r="8" fill="#fbbf24" fill-opacity=".9"/>
+    <path d="M356 82c0-6 5-10 11-10 2-6 8-9 14-7 5 2 8 7 7 12h2c5 0 8 4 8 8s-3 7-8 7h-34c-5 0-8-3-8-7s3-8 8-8Z" fill="#f4f1ec" fill-opacity=".22"/>
+    <rect x="402" y="73" width="24" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+  </g>
+
+  <!-- itinerary, day by day -->
+  <g filter="url(#at-lift)">
+    <rect x="396" y="128" width="230" height="264" rx="14" fill="url(#at-chrome)" stroke="#f97316" stroke-opacity=".35" stroke-width="1.5"/>
+  </g>
+  <g>
+    <rect x="418" y="150" width="78" height="9" rx="4.5" fill="#f4f1ec" fill-opacity=".34"/>
+    <path d="M396 174h230" stroke="#f4f1ec" stroke-opacity=".1" stroke-width="1.5"/>
+    <path d="M432 194v146" stroke="#f97316" stroke-opacity=".35" stroke-width="2" stroke-dasharray="5 7"/>
+    <g>
+      <circle cx="432" cy="196" r="7" fill="#f97316" fill-opacity=".9"/>
+      <rect x="450" y="186" width="96" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+      <rect x="450" y="202" width="140" height="6" rx="3" fill="#f4f1ec" fill-opacity=".14"/>
+
+      <circle cx="432" cy="248" r="7" fill="#2dd4bf" fill-opacity=".9"/>
+      <rect x="450" y="238" width="76" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+      <rect x="450" y="254" width="122" height="6" rx="3" fill="#f4f1ec" fill-opacity=".14"/>
+
+      <circle cx="432" cy="300" r="7" fill="#f4f1ec" fill-opacity=".3"/>
+      <rect x="450" y="290" width="110" height="8" rx="4" fill="#f4f1ec" fill-opacity=".24"/>
+      <rect x="450" y="306" width="86" height="6" rx="3" fill="#f4f1ec" fill-opacity=".12"/>
+    </g>
+    <!-- budget, split between the group -->
+    <path d="M418 336h186" stroke="#f4f1ec" stroke-opacity=".1" stroke-width="1.5"/>
+    <g>
+      <circle cx="446" cy="366" r="20" stroke="#f4f1ec" stroke-opacity=".12" stroke-width="8"/>
+      <circle cx="446" cy="366" r="20" stroke="#f97316" stroke-width="8" stroke-linecap="round"
+              stroke-dasharray="78 126" transform="rotate(-90 446 366)"/>
+      <circle cx="446" cy="366" r="20" stroke="#2dd4bf" stroke-width="8" stroke-linecap="round"
+              stroke-dasharray="34 126" transform="rotate(52 446 366)"/>
+      <rect x="482" y="354" width="72" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="482" y="370" width="52" height="6" rx="3" fill="#f4f1ec" fill-opacity=".14"/>
+    </g>
+  </g>
+</svg>

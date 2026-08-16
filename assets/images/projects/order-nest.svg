@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" fill="none" aria-hidden="true">
+  <!-- ORDER-NEST: the order queue moving through its states, stock drawing down
+       behind it, and role-based access deciding who may act. -->
+  <defs>
+    <radialGradient id="on-amb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".48"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="on-amb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".4"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="on-chrome" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#1a1712" stop-opacity=".93"/>
+      <stop offset="100%" stop-color="#131a18" stop-opacity=".93"/>
+    </linearGradient>
+    <linearGradient id="on-stock" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fdba74"/>
+    </linearGradient>
+    <filter id="on-lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="-4" dy="14" stdDeviation="14" flood-color="#040705" flood-opacity=".5"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="560" cy="60" rx="230" ry="170" fill="url(#on-amb-a)"/>
+  <ellipse cx="120" cy="380" rx="210" ry="160" fill="url(#on-amb-b)"/>
+
+  <!-- order table -->
+  <g filter="url(#on-lift)">
+    <rect x="128" y="40" width="440" height="278" rx="14" fill="url(#on-chrome)" stroke="#f4f1ec" stroke-opacity=".14" stroke-width="1.5"/>
+  </g>
+  <g>
+    <rect x="150" y="62" width="96" height="10" rx="5" fill="#f4f1ec" fill-opacity=".34"/>
+    <path d="M128 92h440" stroke="#f4f1ec" stroke-opacity=".12" stroke-width="1.5"/>
+    <g fill="#f4f1ec" fill-opacity=".18">
+      <rect x="150" y="106" width="52" height="6" rx="3"/>
+      <rect x="240" y="106" width="70" height="6" rx="3"/>
+      <rect x="352" y="106" width="44" height="6" rx="3"/>
+      <rect x="456" y="106" width="52" height="6" rx="3"/>
+    </g>
+
+    <!-- rows: id, customer, total, status -->
+    <g>
+      <path d="M128 168h440M128 218h440M128 268h440" stroke="#f4f1ec" stroke-opacity=".08" stroke-width="1.2"/>
+
+      <rect x="150" y="140" width="44" height="7" rx="3.5" fill="#fdba74" fill-opacity=".55"/>
+      <rect x="240" y="140" width="84" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="352" y="140" width="40" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="456" y="134" width="76" height="20" rx="10" fill="#2dd4bf" fill-opacity=".2" stroke="#2dd4bf" stroke-opacity=".55"/>
+      <rect x="468" y="140" width="42" height="7" rx="3.5" fill="#5eead4" fill-opacity=".8"/>
+
+      <rect x="150" y="190" width="44" height="7" rx="3.5" fill="#fdba74" fill-opacity=".55"/>
+      <rect x="240" y="190" width="62" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="352" y="190" width="52" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="456" y="184" width="76" height="20" rx="10" fill="#f97316" fill-opacity=".28" stroke="#f97316" stroke-opacity=".6"/>
+      <rect x="468" y="190" width="34" height="7" rx="3.5" fill="#fdba74" fill-opacity=".85"/>
+
+      <rect x="150" y="240" width="44" height="7" rx="3.5" fill="#fdba74" fill-opacity=".55"/>
+      <rect x="240" y="240" width="96" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="352" y="240" width="36" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".26"/>
+      <rect x="456" y="234" width="76" height="20" rx="10" fill="#f4f1ec" fill-opacity=".1" stroke="#f4f1ec" stroke-opacity=".24"/>
+      <rect x="468" y="240" width="48" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".4"/>
+
+      <rect x="150" y="290" width="44" height="7" rx="3.5" fill="#fdba74" fill-opacity=".4"/>
+      <rect x="240" y="290" width="72" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".18"/>
+      <rect x="352" y="290" width="44" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".18"/>
+      <rect x="456" y="284" width="76" height="20" rx="10" fill="#f4f1ec" fill-opacity=".07" stroke="#f4f1ec" stroke-opacity=".16"/>
+    </g>
+  </g>
+
+  <!-- inventory drawing down as orders are filled -->
+  <g filter="url(#on-lift)">
+    <rect x="60" y="266" width="230" height="126" rx="12" fill="url(#on-chrome)" stroke="#f97316" stroke-opacity=".35" stroke-width="1.5"/>
+  </g>
+  <g>
+    <rect x="80" y="286" width="64" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+    <g>
+      <rect x="80" y="312" width="190" height="9" rx="4.5" fill="#f4f1ec" fill-opacity=".1"/>
+      <rect x="80" y="312" width="146" height="9" rx="4.5" fill="url(#on-stock)"/>
+      <rect x="80" y="336" width="190" height="9" rx="4.5" fill="#f4f1ec" fill-opacity=".1"/>
+      <rect x="80" y="336" width="92" height="9" rx="4.5" fill="url(#on-stock)" fill-opacity=".8"/>
+      <rect x="80" y="360" width="190" height="9" rx="4.5" fill="#f4f1ec" fill-opacity=".1"/>
+      <rect x="80" y="360" width="44" height="9" rx="4.5" fill="#f97316" fill-opacity=".9"/>
+    </g>
+  </g>
+
+  <!-- who is allowed to act on it -->
+  <g filter="url(#on-lift)">
+    <rect x="410" y="300" width="204" height="96" rx="12" fill="url(#on-chrome)" stroke="#2dd4bf" stroke-opacity=".35" stroke-width="1.5"/>
+  </g>
+  <g>
+    <circle cx="440" cy="330" r="13" fill="#2dd4bf" fill-opacity=".2" stroke="#2dd4bf" stroke-opacity=".6" stroke-width="1.5"/>
+    <circle cx="440" cy="326" r="4.5" fill="#5eead4" fill-opacity=".85"/>
+    <path d="M433 338c1.6-4 12.4-4 14 0" stroke="#5eead4" stroke-opacity=".85" stroke-width="2" stroke-linecap="round"/>
+    <rect x="464" y="320" width="76" height="8" rx="4" fill="#f4f1ec" fill-opacity=".3"/>
+    <rect x="464" y="336" width="52" height="6" rx="3" fill="#f4f1ec" fill-opacity=".16"/>
+    <g>
+      <rect x="430" y="360" width="58" height="18" rx="9" fill="#2dd4bf" fill-opacity=".22" stroke="#2dd4bf" stroke-opacity=".5"/>
+      <rect x="498" y="360" width="48" height="18" rx="9" fill="#f4f1ec" fill-opacity=".07" stroke="#f4f1ec" stroke-opacity=".18"/>
+      <rect x="556" y="360" width="40" height="18" rx="9" fill="#f4f1ec" fill-opacity=".07" stroke="#f4f1ec" stroke-opacity=".18"/>
+    </g>
+  </g>
+</svg>

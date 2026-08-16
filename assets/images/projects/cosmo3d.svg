@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" fill="none" aria-hidden="true">
+  <!-- Cosmo3D: one noisy power spectrum goes in, the joint posterior over four
+       cosmological parameters comes back as a rotating point cloud. -->
+  <defs>
+    <radialGradient id="cs-amb-a" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cs-amb-b" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cs-cloud" cx="42%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#fdba74" stop-opacity=".5"/>
+      <stop offset="55%" stop-color="#2dd4bf" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cs-chrome" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#101f1d" stop-opacity=".92"/>
+      <stop offset="100%" stop-color="#141513" stop-opacity=".92"/>
+    </linearGradient>
+    <filter id="cs-lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="-4" dy="14" stdDeviation="14" flood-color="#040705" flood-opacity=".5"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="430" cy="200" rx="260" ry="220" fill="url(#cs-amb-a)"/>
+  <ellipse cx="90" cy="390" rx="200" ry="150" fill="url(#cs-amb-b)"/>
+
+  <!-- the observed spectrum, noisy, on the left -->
+  <g filter="url(#cs-lift)">
+    <rect x="20" y="66" width="196" height="132" rx="12" fill="url(#cs-chrome)" stroke="#f4f1ec" stroke-opacity=".14" stroke-width="1.5"/>
+  </g>
+  <g>
+    <rect x="38" y="84" width="62" height="7" rx="3.5" fill="#f4f1ec" fill-opacity=".28"/>
+    <path d="M38 178h160M38 178V104" stroke="#f4f1ec" stroke-opacity=".18" stroke-width="1.5"/>
+    <path d="M44 158c22-42 34 6 48-26 12-28 24 14 36-10 10-20 20 4 28-14"
+          stroke="#fdba74" stroke-opacity=".35" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44 158c22-42 34 6 48-26 12-28 24 14 36-10 10-20 20 4 28-14"
+          stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#5eead4" fill-opacity=".85">
+      <circle cx="56" cy="146" r="2.5"/><circle cx="76" cy="128" r="2.5"/>
+      <circle cx="96" cy="130" r="2.5"/><circle cx="116" cy="112" r="2.5"/>
+      <circle cx="136" cy="118" r="2.5"/><circle cx="152" cy="100" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- amortized inference: straight through, in milliseconds -->
+  <path d="M222 132h46" stroke="#5eead4" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 7"/>
+  <path d="M262 126 270 132 262 138Z" fill="#5eead4" fill-opacity=".8"/>
+
+  <!-- the posterior, rendered as a point cloud -->
+  <g>
+    <ellipse cx="420" cy="196" rx="150" ry="150" fill="url(#cs-cloud)"/>
+    <g stroke="#2dd4bf" stroke-opacity=".3" stroke-width="1.5">
+      <ellipse cx="420" cy="196" rx="132" ry="46" transform="rotate(-22 420 196)"/>
+      <ellipse cx="420" cy="196" rx="46" ry="132" transform="rotate(-22 420 196)"/>
+      <ellipse cx="420" cy="196" rx="118" ry="118"/>
+    </g>
+    <g fill="#fdba74">
+      <circle cx="388" cy="150" r="3.4" fill-opacity=".95"/><circle cx="424" cy="140" r="2.8" fill-opacity=".8"/>
+      <circle cx="452" cy="166" r="3.2" fill-opacity=".9"/><circle cx="404" cy="182" r="4" fill-opacity="1"/>
+      <circle cx="440" cy="198" r="3.6" fill-opacity=".95"/><circle cx="376" cy="206" r="3" fill-opacity=".85"/>
+      <circle cx="412" cy="222" r="3.8" fill-opacity=".95"/><circle cx="452" cy="234" r="2.6" fill-opacity=".7"/>
+      <circle cx="392" cy="248" r="3" fill-opacity=".8"/><circle cx="432" cy="262" r="2.4" fill-opacity=".65"/>
+    </g>
+    <g fill="#5eead4">
+      <circle cx="340" cy="176" r="2.6" fill-opacity=".7"/><circle cx="352" cy="228" r="2.2" fill-opacity=".6"/>
+      <circle cx="486" cy="188" r="2.6" fill-opacity=".7"/><circle cx="472" cy="132" r="2.2" fill-opacity=".6"/>
+      <circle cx="500" cy="242" r="2" fill-opacity=".5"/><circle cx="318" cy="132" r="2" fill-opacity=".5"/>
+      <circle cx="366" cy="106" r="2.4" fill-opacity=".6"/><circle cx="516" cy="160" r="1.8" fill-opacity=".45"/>
+      <circle cx="330" cy="278" r="2" fill-opacity=".45"/><circle cx="470" cy="292" r="2.2" fill-opacity=".5"/>
+      <circle cx="404" cy="86" r="1.8" fill-opacity=".4"/><circle cx="544" cy="208" r="1.6" fill-opacity=".35"/>
+    </g>
+  </g>
+
+  <!-- corner plot: the degeneracies it recovers without being taught them -->
+  <g filter="url(#cs-lift)">
+    <rect x="424" y="264" width="196" height="134" rx="12" fill="url(#cs-chrome)" stroke="#2dd4bf" stroke-opacity=".32" stroke-width="1.5"/>
+  </g>
+  <g>
+    <g stroke="#f4f1ec" stroke-opacity=".14" stroke-width="1.2">
+      <path d="M444 284v96M444 380h156M522 284v96M444 332h156"/>
+    </g>
+    <g stroke="#f97316" fill="#f97316">
+      <ellipse cx="483" cy="308" rx="24" ry="10" transform="rotate(-32 483 308)" fill-opacity=".22" stroke-opacity=".55"/>
+      <ellipse cx="483" cy="308" rx="12" ry="5" transform="rotate(-32 483 308)" fill-opacity=".4" stroke-opacity=".7"/>
+      <ellipse cx="561" cy="356" rx="26" ry="9" transform="rotate(18 561 356)" fill-opacity=".2" stroke-opacity=".5"/>
+      <ellipse cx="561" cy="356" rx="13" ry="4.5" transform="rotate(18 561 356)" fill-opacity=".38" stroke-opacity=".65"/>
+    </g>
+    <g stroke="#2dd4bf" fill="#2dd4bf">
+      <ellipse cx="561" cy="308" rx="22" ry="11" transform="rotate(26 561 308)" fill-opacity=".2" stroke-opacity=".5"/>
+      <ellipse cx="483" cy="356" rx="20" ry="8" transform="rotate(-14 483 356)" fill-opacity=".22" stroke-opacity=".55"/>
+    </g>
+  </g>
+</svg>
