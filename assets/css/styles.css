@@ -808,6 +808,14 @@ body.light-mode .language-toggle {
     border-color: var(--primary-light);
 }
 
+/* Inline SVG glyphs (sites Font Awesome has no brand icon for) sit on the same
+   optical size as the icon-font glyphs and inherit their colour. */
+.social-svg {
+    width: 1.1em;
+    height: 1.1em;
+    display: block;
+}
+
 /* Brand colors for each social icon */
 .social-links a .fa-github { color: #f0f6fc; }
 .social-links a .fa-gitlab { color: #fc6d26; }
@@ -815,14 +823,56 @@ body.light-mode .language-toggle {
 .social-links a .fa-stack-overflow { color: #f48024; }
 .social-links a .fa-laptop-code { color: #1789fc; }
 .social-links a .fa-google-scholar { color: #4285f4; }
+.social-links a[data-tooltip="LeetCode"] { color: #ffa116; }
 body.light-mode .social-links a .fa-github,
 body.warm-mode .social-links a .fa-github { color: #181717; }
 
 /* On hover the tile fills with amber, so the glyph switches to the dark ink
    for contrast (brand colours stay visible in the resting state). */
 .social-links a:hover i,
+.social-links a:hover .social-svg,
+.social-links a:hover,
 body.light-mode .social-links a:hover .fa-github,
 body.warm-mode .social-links a:hover .fa-github { color: var(--on-primary); }
+
+/* Hover/focus label naming the site behind each icon. */
+.social-links a {
+    position: relative;
+}
+
+.social-links a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    padding: 0.35rem 0.625rem;
+    border-radius: 8px;
+    background: var(--bg-dark, #1b1d1a);
+    color: var(--text-primary);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-md);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    z-index: 5;
+}
+
+.social-links a:hover::after,
+.social-links a:focus-visible::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-links a::after { transition: none; }
+}
 
 .hero-image {
     display: flex;
@@ -1358,6 +1408,13 @@ body.light-mode .social-links a:hover {
     background: var(--primary-fill);
     color: var(--on-primary);
     border-color: var(--primary-color);
+}
+
+body.light-mode .social-links a::after,
+body.warm-mode .social-links a::after {
+    background: #ffffff;
+    color: var(--text-primary);
+    border-color: rgba(226, 229, 221, 0.9);
 }
 
 body.light-mode .name {
@@ -2665,8 +2722,10 @@ body.warm-mode .project-card[data-art] {
     border-color: var(--primary-dark);
 }
 
-.social-card i {
+.social-card i,
+.social-card .social-svg {
     font-size: 1.25rem;
+    flex-shrink: 0;
 }
 
 .social-card span {
